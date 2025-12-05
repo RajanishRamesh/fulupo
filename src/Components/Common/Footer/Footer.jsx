@@ -9,7 +9,7 @@ import VendorIcon from "../../../Assets/Footer/Vendors.png";
 
 function Footer() {
   return (
-    <div className="footer">
+    <section id="footer" className="footer">
 
       {/* MAIN ROW */}
       <div className="footer-content">
@@ -60,7 +60,7 @@ function Footer() {
         All rights reserved.
       </div>
 
-    </div>
+    </section>
   );
 }
 

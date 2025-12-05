@@ -10,7 +10,7 @@ import Stars from "../../../Assets/Icons/Stars.ico";
 
 function ProductsSection() {
   return (
-    <div className="products-section">
+    <section id="products" className="products-section">
 
       {/* TOP BADGE */}
       <div className="top-badge">
@@ -125,7 +125,7 @@ function ProductsSection() {
         </div>
 
       </div>
-    </div>
+    </section>
   );
 }
 

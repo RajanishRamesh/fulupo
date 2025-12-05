@@ -16,22 +16,25 @@ import RevolutionSection from "../Home/Revolution_Section/Revolution_Section";
 const HomePage = () => {
   return (
     <>
-      <HeroSection />
-       <StatsSection/>
-      <ProductsSection />
-      <SeamlessSection/>
-      <FMCG_Section />
-      <IntelligentStore/>
-      <WhyFlupo/>
-      <Action_Section/>
-      <Contact_Section/>
-      <Generation_Section />
-      <Roadmap />
-      <VisionSection />
-       <RevolutionSection/>
-      
-     
-      
+      <section id="home"><HeroSection /></section>
+      <section id="stats"><StatsSection /></section>
+      <section id="products"><ProductsSection /></section>
+      <section id="features"><SeamlessSection /></section>
+      <section id="features"><FMCG_Section /></section>
+      <section id="features"><IntelligentStore /></section>
+      <section id="features"><WhyFlupo /></section>
+
+      {/* DEMO SECTION MUST HAVE ID="action" */}
+      <section id="demo"><Action_Section /></section>
+
+      {/* CONTACT (optional) */}
+      <section id="demo"><Contact_Section /></section>
+
+      {/* FUTURE SECTION MUST HAVE ID="generation" */}
+      <section id="future"><Generation_Section /></section>
+      <section id="future"><Roadmap /></section>
+      <section id="future"><VisionSection /></section>
+      <section id="future"><RevolutionSection /></section>
     </>
   );
 };

@@ -10,7 +10,7 @@ import MailIcon from "../../../Assets/Home/Contacts_Section/Mail.png"
 
 export default function DemoContact() {
   return (
-    <div className="contact-wrapper">
+    <section id="demo" className="contact-wrapper">
 
       {/* LEFT CARD */}
       <div className="left-card">
@@ -75,6 +75,6 @@ export default function DemoContact() {
           Contact Expert
         </button>
       </div>
-    </div>
+    </section>
   );
 }

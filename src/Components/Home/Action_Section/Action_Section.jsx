@@ -4,7 +4,7 @@ import store from "../../../Assets/Home/Action_Section/store.jpg";
 
 export default function Action_Section() {
   return (
-    <section className="see-section">
+    <section id="demo" className="see-section">
 
       {/* TOP SMALL BUTTON */}
       <div className="demo-btn">Live Demo</div>

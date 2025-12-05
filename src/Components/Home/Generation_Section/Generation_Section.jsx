@@ -14,7 +14,7 @@ import GrassImg from "../../../Assets/Home/Generation_Section/Border.png";
 
 export default function Generation_Section() {
   return (
-    <div className="generation-wrapper">
+    <section id="future" className="generation-wrapper">
 
       {/* ⭐ TOP SECTION */}
       <div className="nextgen-wrapper">
@@ -84,6 +84,6 @@ export default function Generation_Section() {
       {/* ⭐ GRASS BORDER BOTTOM */}
       <img src={GrassImg} alt="grass" className="grass-border" />
 
-    </div>
+    </section>
   );
 }

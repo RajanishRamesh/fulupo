@@ -8,7 +8,7 @@ import veg_R from "../../../Assets/Home/Intelligent_Store/Veg_L.png";
 
 export default function Intelligent_Store() {
   return (
-    <section className="is-wrapper">
+    <section id="features" className="is-wrapper">
 
       {/* Decorative Right Image */}
       <img src={veg_R} alt="" className="veg-left" />
