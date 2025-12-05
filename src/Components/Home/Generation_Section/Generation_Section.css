@@ -1,0 +1,351 @@
+/* ------------------------------------------------------ */
+/* TOP SECTION */
+.nextgen-wrapper {
+  width: 100%;
+  text-align: center;
+  padding: 40px 0 50px;
+  font-family: "Inter", sans-serif;
+}
+
+.nextgen-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: #ffffff;
+  padding: 8px 20px;
+  border-radius: 30px;
+  border: 1px solid #e6e6e6;
+  font-size: 14px;
+  font-weight: 500;
+  color: #444;
+}
+
+.sparkle-icon {
+  width: 16px;
+  height: 16px;
+}
+
+.nextgen-title {
+  margin-top: 18px;
+  font-size: 34px;
+  font-weight: 800;
+  color: #6da926;
+}
+
+.underline-img {
+  width: 260px;
+  margin-top: 4px;
+  margin-bottom: 18px;
+}
+
+.nextgen-desc {
+  width: 62%;
+  margin: 0 auto;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #555;
+}
+
+/* ------------------------------------------------------ */
+/* WRAPPER */
+.generation-wrapper {
+  width: 100%;
+  font-family: "Inter", sans-serif;
+  text-align: center;
+  padding-bottom: 40px;
+  position: relative; /* required for grass */
+}
+
+/* ⭐ GRASS BORDER IMAGE */
+.grass-border {
+  position: absolute; 
+  bottom: -2px;
+  left: 0;
+  width: 10000;
+  height: 2px;
+  /* object-fit: cover; */
+  z-index: 1;
+  /* pointer-events: none; */
+  transform: translatey(-33px);
+}
+
+/* ------------------------------------------------------ */
+/* GREEN SECTION */
+.green-section {
+  background: #0e3b10;
+  padding: 40px 60px;
+  display: flex;
+  justify-content: space-between;
+  border-radius: 12px;
+  color: #fff;
+}
+
+/* LEFT SIDE */
+.left-box {
+  width: 33%;
+  text-align: left;
+  transform: translateX(90px);
+}
+
+.eco-tag {
+  display: inline-block;
+  background: #ffffff;
+  color: #000;
+  padding: 6px 14px;
+  border-radius: 18px;
+  font-size: 14px;
+  margin-bottom: 15px;
+  font-weight: 500;
+}
+
+.producer-title {
+  font-size: 30px;
+  font-weight: 800;
+  color: #ffcf00;
+}
+
+.producer-sub {
+  margin-top: 2px;
+  margin-bottom: 16px;
+  font-size: 14px;
+  opacity: 0.8;
+}
+
+.producer-desc {
+  width: 90%;
+  line-height: 1.6;
+  color: #e6e6e6;
+  font-size: 15px;
+  margin-bottom: 28px;
+  font-weight: 400;
+}
+
+.yellow-btn {
+  background: #ffd600;
+  padding: 12px 26px;
+  border: none;
+  border-radius: 24px;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+/* ------------------------------------------------------ */
+/* UPDATED FINAL CARDS */
+.card-grid {
+  width: 35%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 18px;
+}
+
+.card {
+  background: #ffffff;
+  padding: 22px;
+  border-radius: 16px;
+  text-align: center;
+  min-height: 115px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.10);
+  transform: translateX(-125px);
+  transition: all 0.25s ease;
+}
+
+/* HOVER */
+.card:hover {
+  transform: translateX(-125px) translateY(-3px) scale(1.03);
+  box-shadow: 0 6px 18px rgba(0,0,0,0.15);
+}
+
+.card img {
+  width: 88px;
+  height: 63px;
+  object-fit: contain;
+  margin-bottom: 4px;
+}
+
+.card p {
+  color: #6da926;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 1.35;
+  margin: 0;
+}
+
+/* ========================================================= */
+/*                       RESPONSIVE UI                       */
+/* ========================================================= */
+
+/* ---------- TABLET (max-width: 1024px) ---------- */
+@media (max-width: 1024px) {
+
+  .nextgen-title {
+    font-size: 30px;
+  }
+
+  .underline-img {
+    width: 200px;
+  }
+
+  .nextgen-desc {
+    width: 80%;
+    font-size: 15px;
+  }
+
+  .green-section {
+    padding: 35px 40px;
+    gap: 40px;
+  }
+
+  .left-box {
+    width: 45%;
+    transform: translateX(0); /* remove big shift */
+  }
+
+  .producer-title {
+    font-size: 26px;
+  }
+
+  .producer-desc {
+    width: 95%;
+  }
+
+  .card-grid {
+    width: 45%;
+    transform: translateX(0); /* fix card position */
+  }
+
+  .card {
+    transform: translateX(0); /* reset desktop shift */
+  }
+
+  .card:hover {
+    transform: translateY(-4px) scale(1.03);
+  }
+}
+
+/* ---------- MOBILE LAYOUT (max-width: 768px) ---------- */
+@media (max-width: 768px) {
+
+  .nextgen-wrapper {
+    padding: 30px 0;
+  }
+
+  .nextgen-title {
+    font-size: 26px;
+  }
+
+  .underline-img {
+    width: 160px;
+  }
+
+  .nextgen-desc {
+    width: 90%;
+    font-size: 14px;
+  }
+
+  .grass-border {
+    width: 100%;
+    transform: translateY(-18px);
+  }
+
+  /* STACK GREEN SECTION */
+  .green-section {
+    flex-direction: column;
+    text-align: center;
+    padding: 30px 20px;
+  }
+
+  .left-box {
+    width: 100%;
+    transform: none;
+  }
+
+  .producer-title {
+    font-size: 24px;
+  }
+
+  .producer-desc {
+    width: 100%;
+    font-size: 14px;
+  }
+
+  .yellow-btn {
+    padding: 10px 22px;
+    font-size: 14px;
+  }
+
+  /* CARDS FULL WIDTH */
+  .card-grid {
+    width: 100%;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+    margin-top: 25px;
+  }
+
+  .card {
+    padding: 18px;
+  }
+
+  .card img {
+    width: 70px;
+    height: 55px;
+  }
+
+  .card p {
+    font-size: 14px;
+  }
+}
+
+/* ---------- SMALL MOBILE (max-width: 480px) ---------- */
+@media (max-width: 480px) {
+
+  .nextgen-title {
+    font-size: 22px;
+  }
+
+  .underline-img {
+    width: 130px;
+  }
+
+  .nextgen-desc {
+    width: 95%;
+    font-size: 13px;
+  }
+
+  .green-section {
+    padding: 25px 18px;
+  }
+
+  .producer-title {
+    font-size: 20px;
+  }
+
+  .producer-sub {
+    font-size: 13px;
+  }
+
+  .producer-desc {
+    font-size: 13px;
+  }
+
+  /* CARDS — 1 per row */
+  .card-grid {
+    grid-template-columns: 1fr;
+    gap: 14px;
+  }
+
+  .card img {
+    width: 65px;
+    height: 50px;
+  }
+
+  .card p {
+    font-size: 13px;
+  }
+}
+

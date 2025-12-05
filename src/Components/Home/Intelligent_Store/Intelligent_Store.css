@@ -1,0 +1,190 @@
+/* MAIN WRAPPER */
+.is-wrapper {
+  position: relative;
+  width: 100%;
+  padding: 90px 0 80px;
+  text-align: center;
+  background: #0d2e0f;
+  color: #fff;
+  font-family: "Inter", sans-serif;
+  overflow: hidden;
+}
+
+
+
+.veg-left {
+  position: absolute;
+  left: 0px;
+  top: 0%;
+  width: 400px; 
+  opacity: 0.9;
+  pointer-events: none; 
+}
+
+/* RIGHT VEG IMAGE */
+.veg-right {
+  position: absolute;
+  right: 0px;
+  top: 45%;
+  width: 340px;
+  transform: translateY(-150%);
+  opacity: 0.9;
+  pointer-events: none;
+}
+
+/* CONTENT BLOCK */
+.is-content {
+  width: 100%;
+  max-width: 950px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* TITLE */
+.is-title {
+  font-size: 42px;
+  font-weight: 800;
+  color: #f9b31a;
+  margin-bottom: 10px;
+}
+
+/* BRUSH */
+.is-brush {
+  width: 220px;
+  margin: 8px auto 18px;
+  display: block;
+}
+
+/* SUBTEXT */
+.is-subtext {
+  width: 70%;
+  margin: 0 auto 45px;
+  font-size: 17px;
+  line-height: 1.65;
+  color: #e9e9e9;
+}
+
+/* CENTER IMAGE */
+.is-center-container {
+  display: flex;
+  justify-content: center;
+}
+
+.is-center-img {
+  width: 780px;
+  max-width: 100%;
+  height: auto;
+}
+
+/* ================================ */
+/* RESPONSIVE BREAKPOINTS */
+/* ================================ */
+
+/* Tablet */
+@media (max-width: 1024px) {
+  .veg-left {
+    width: 260px;
+    top: 8%;
+    left: -20px;
+  }
+
+  .veg-right {
+    width: 250px;
+    top: 48%;
+    right: -20px;
+  }
+
+  .is-title {
+    font-size: 36px;
+  }
+
+  .is-subtext {
+    width: 80%;
+  }
+
+  .is-center-img {
+    width: 650px;
+  }
+}
+
+/* Small Tablet */
+@media (max-width: 768px) {
+  .veg-left,
+  .veg-right {
+    width: 200px;
+    opacity: 0.5;
+  }
+
+  .veg-left {
+    top: 10%;
+  }
+
+  .veg-right {
+    top: 55%;
+  }
+
+  .is-title {
+    font-size: 32px;
+  }
+
+  .is-subtext {
+    width: 90%;
+    font-size: 15px;
+  }
+
+  .is-center-img {
+    width: 520px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+  .veg-left,
+  .veg-right {
+    width: 150px;
+    opacity: 0.35;
+  }
+
+  .veg-left {
+    top: 12%;
+    left: -25px;
+  }
+
+  .veg-right {
+    top: 60%;
+    right: -25px;
+  }
+
+  .is-title {
+    font-size: 26px;
+  }
+
+  .is-brush {
+    width: 150px;
+  }
+
+  .is-subtext {
+    width: 95%;
+    font-size: 14px;
+  }
+
+  .is-center-img {
+    width: 380px;
+  }
+}
+
+/* Small Mobile */
+@media (max-width: 360px) {
+  .veg-left,
+  .veg-right {
+    width: 120px;
+  }
+
+  .is-title {
+    font-size: 22px;
+  }
+
+  .is-center-img {
+    width: 300px;
+  }
+}

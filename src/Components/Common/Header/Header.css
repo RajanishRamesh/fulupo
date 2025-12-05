@@ -1,0 +1,248 @@
+/* ================= MAIN HEADER ================= */
+.pro-header {
+  width: 100%;
+  padding: 14px 45px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #ffffff;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.06);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-sizing: border-box;
+}
+
+/* ================= LEFT LOGO ================= */
+.pro-left {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.pro-logo {
+  width: 200px !important;
+  height: auto;
+}
+
+
+
+/* ================= NAVIGATION ================= */
+.pro-nav {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  transition: 0.3s ease;
+}
+
+.pro-link {
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 600;
+  color: #000;
+  position: relative;
+  padding-bottom: 4px;
+}
+
+/* Underline hover */
+.pro-link::after {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  background: #7CA12E;
+  left: 0;
+  bottom: 0;
+  transition: 0.3s;
+}
+
+.pro-link:hover::after {
+  width: 100%;
+}
+
+/* ================= RIGHT BUTTONS ================= */
+.pro-right {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+
+.pro-btn-store {
+  padding: 10px 22px;
+  border: 2px solid #7CA12E;
+  background: white;
+  color: #7CA12E;
+  font-weight: 600;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: 0.25s ease;
+}
+
+.pro-btn-store:hover {
+  background: #EAF6D3;
+}
+
+.pro-btn-consumer {
+  padding: 11.5px 20px;
+  background: #FF0000;
+  color: white;
+  font-weight: 600;
+  border-radius: 50px;
+  border: none;
+  cursor: pointer;
+  transition: 0.25s ease;
+}
+
+.pro-btn-consumer:hover {
+  opacity: 0.85;
+}
+
+/* ================= HAMBURGER (MOBILE) ================= */
+.pro-hamburger {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  cursor: pointer;
+}
+
+.pro-hamburger span {
+  width: 26px;
+  height: 3px;
+  background: #333;
+  border-radius: 2px;
+  transition: 0.3s;
+}
+
+/* ================= RESPONSIVE ================= */
+
+/* Tablet */
+@media (max-width: 992px) {
+  .pro-nav {
+    gap: 25px;
+  }
+
+  .pro-right {
+    gap: 12px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .pro-hamburger {
+    display: flex;
+  }
+
+  .pro-nav {
+    position: absolute;
+    top: 70px;
+    right: 0;
+    width: 100%;
+    background: white;
+    flex-direction: column;
+    padding: 20px 0;
+    gap: 25px;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+  }
+
+  .pro-nav.active {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+  }
+
+  .pro-right {
+    display: none;
+  }
+
+  
+
+  /* 🌟 MOBILE LOGO FIX — ADAPTS PERFECTLY */
+  .pro-logo {
+    width: 140px !important;
+    height: auto;
+  }
+
+  .pro-left {
+    gap: 4px;
+  }
+}
+
+
+/* ACTIVE LINK */
+.pro-link.active {
+  color: #000000;
+}
+
+/* ACTIVE UNDERLINE */
+.pro-link.active::after {
+  width: 100%;
+  background: #7CA12E;
+}
+/* =======================================================
+   LAPTOP VIEW FIX (Perfect professional UI)
+   For screens between 1100px – 1280px
+======================================================= */
+@media (max-width: 1280px) {
+
+  .pro-header {
+    padding: 14px 30px; /* reduce wide padding */
+  }
+
+  .pro-logo {
+    width: 170px !important; /* reduce slightly */
+  }
+
+  .pro-nav {
+    gap: 28px; /* reduce navlink spacing */
+  }
+
+  .pro-link {
+    font-size: 15px; /* slightly smaller for clean layout */
+  }
+
+  .pro-right {
+    gap: 14px;
+  }
+
+  .pro-btn-store,
+  .pro-btn-consumer {
+    padding: 9px 18px;  /* reduce button padding */
+    font-size: 14px;
+  }
+}
+
+/* =======================================================
+   SMALLER LAPTOPS / LARGE TABLETS (1000px – 1100px)
+======================================================= */
+@media (max-width: 1100px) {
+
+  .pro-header {
+    padding: 12px 24px;
+  }
+
+  .pro-logo {
+    width: 150px !important;
+  }
+
+  .pro-nav {
+    gap: 20px;
+  }
+
+  .pro-link {
+    font-size: 14px;
+  }
+
+  .pro-right {
+    gap: 10px;
+  }
+
+  .pro-btn-store,
+  .pro-btn-consumer {
+    padding: 8px 16px;
+    font-size: 13px;
+  }
+}
+

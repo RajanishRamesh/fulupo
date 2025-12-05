@@ -1,0 +1,232 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+
+* {
+  font-family: 'Inter', sans-serif;
+}
+
+.vision-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 40px 0;
+  background: transparent;
+  position: relative;
+  z-index: 10;
+}
+
+/* CARD */
+.vision-card {
+  width: 900px;
+  min-height: 280px;
+  border-radius: 40px;
+  background: #fff;
+  padding: 40px 55px;
+  display: flex;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0px 3px 12px rgba(0,0,0,0.09);
+}
+
+/* QUOTES */
+.quote-left {
+  position: absolute;
+  width: 54px;
+  height: 41px;
+  top: 40px;
+  left: 55px;
+  z-index: 20;
+}
+
+.quote-right {
+  position: absolute;
+  width: 54px;
+  height: 41px;
+  bottom: 40px;
+  right: 55px;
+  z-index: 20;
+}
+
+/* TEXT BLOCK */
+.vision-content {
+  width: 100%;
+  position: relative;
+  z-index: 5;
+}
+
+.vision-title {
+  font-size: 30px;
+  font-weight: 800;
+  color: #6DA926;
+  margin-bottom: 5px;
+}
+
+.vision-underline {
+  width: 145px;
+  height: 12px;
+  background-size: cover;
+  margin-bottom: 12px;
+}
+
+.vision-text {
+  margin-top: 10px;
+  color: #444;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.highlight-red {
+  font-size: 26px;
+  color: red;
+  font-weight: 800;
+  margin-top: 12px;
+}
+
+.vision-author {
+  margin-top: 35px;
+  font-size: 14px;
+  color: #777;
+}
+
+/* CIRCLE BG */
+.vision-circle {
+  width: 480px;
+  height: 420px;
+  border-radius: 50%;
+  background: rgba(255, 204, 0, 0.3);
+  position: absolute;
+  right: -150px;
+  top: -40px;
+  z-index: 1;
+}
+
+/* FOOD IMAGE */
+.food-img {
+  position: absolute;
+  width: 280px;
+  top: 80px;
+  left: 45px;
+  opacity: 0.34;
+  z-index: 2;
+}
+
+/* ============================
+   TABLET (1024px ↓)
+============================ */
+@media (max-width: 1024px) {
+  .vision-card {
+    width: 90%;
+    padding: 35px;
+  }
+
+  .vision-circle {
+    width: 380px;
+    height: 340px;
+    right: -110px;
+  }
+
+  .food-img {
+    width: 230px;
+    top: 90px;
+  }
+
+  .quote-left,
+  .quote-right {
+    width: 40px;
+    height: 32px;
+  }
+
+  .vision-title {
+    font-size: 28px;
+  }
+
+  .vision-text {
+    font-size: 17px;
+  }
+}
+
+/* ============================
+   MEDIUM DEVICES (768px ↓)
+============================ */
+@media (max-width: 768px) {
+  .vision-card {
+    flex-direction: column;
+    padding: 28px;
+    text-align: center;
+    height: auto;
+  }
+
+  .quote-left {
+    top: 20px;
+    left: 20px;
+  }
+
+  .quote-right {
+    bottom: 20px;
+    right: 20px;
+  }
+
+  .vision-content {
+    margin-top: 20px;
+  }
+
+  .vision-circle {
+    width: 320px;
+    height: 280px;
+    right: -90px;
+    top: -20px;
+  }
+
+  .food-img {
+    width: 200px;
+    top: 120px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .vision-title {
+    font-size: 26px;
+  }
+
+  .vision-text {
+    font-size: 16px;
+  }
+
+  .highlight-red {
+    font-size: 22px;
+  }
+}
+
+/* ============================
+   SMALL MOBILE (480px ↓)
+============================ */
+@media (max-width: 480px) {
+  .vision-card {
+    padding: 22px;
+  }
+
+  .vision-title {
+    font-size: 22px;
+  }
+
+  .vision-text {
+    font-size: 15px;
+  }
+
+  .vision-circle {
+    width: 240px;
+    height: 200px;
+    right: -70px;
+  }
+
+  .food-img {
+    width: 150px;
+  }
+
+  .quote-left {
+    left: 15px;
+  }
+
+  .quote-right {
+    right: 15px;
+  }
+}

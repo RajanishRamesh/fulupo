@@ -1,0 +1,182 @@
+/* .fmcg-wrapper {
+  width: 100%;
+  text-align: center;
+  padding: 40px 0;
+  font-family: "Inter", sans-serif;
+} */
+
+.fmcg-wrapper{
+  padding-bottom: 90px;
+}
+
+
+.main-title {
+  font-size: 28px;
+  font-weight: 700;
+  color: #5b7e16;
+  padding : 80px;
+  
+}
+
+.underline {
+  
+  width: 390px;
+  height: 15px;
+  background: url("../../../Assets/Home//FMCG_Section/Greenline.png") no-repeat center;
+  background-size: contain;
+  transform: translateY(-15px) !important;
+
+}
+
+.cards-row {
+  display: flex;
+  justify-content: center;
+  gap: 45px;
+  flex-wrap: wrap;
+}
+
+.card-box {
+  text-align: center;
+}
+
+.img-wrapper {
+  width: 170px;
+  height: 170px;
+  /* position: relative; */
+  /* overflow: hidden; */
+  border-radius: 22px;
+  transform: rotate(45deg);
+}
+
+.img-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transform: rotate(-45deg);
+}
+
+
+
+.card-title {
+  font-size: 16px;
+  font-weight: 600;
+  color: #555;
+  margin-top: 20px;
+}
+@media (max-width: 1024px) {
+  .underline {
+    width: 280px;
+    height: 12px;
+    transform: translateY(-12px) !important;
+    background-size: contain;
+  }
+
+  .main-title {
+    font-size: 26px;
+    padding: 60px 0;
+  }
+}
+@media (max-width: 768px) {
+  .underline {
+    width: 200px;
+    height: 10px;
+    transform: translateY(-10px) !important;
+    margin: 0 auto 12px;
+    background-size: contain;
+  }
+
+  .main-title {
+    font-size: 22px;
+    padding: 40px 0;
+  }
+}
+@media (max-width: 480px) {
+  .underline {
+    width: 150px;
+    height: 8px;
+    transform: translateY(-8px) !important;
+    margin: 0 auto 10px;
+  }
+
+  .main-title {
+    font-size: 20px;
+    padding: 30px 0;
+  }
+}
+
+/* ===========================================
+   GLOBAL TITLE + BRUSH SPACING FIX
+   (Professional Alignment on All Screens)
+=========================================== */
+
+.section-title,
+.main-title,
+.roadmap-title,
+.nextgen-title {
+  margin-bottom: 6px;     /* reduce space before brush */
+}
+
+.brush-underline,
+.underline,
+.underline-img {
+  margin-top: 2px;
+  margin-bottom: 12px;     /* reduce brush-to-content gap */
+  transform: translateY(-66px) !important; /* perfect tight alignment */
+}
+@media (max-width: 1280px) {
+  .section-title,
+  .main-title,
+  .roadmap-title,
+  .nextgen-title {
+    margin-bottom: 4px;
+  }
+
+  .brush-underline,
+  .underline,
+  .underline-img {
+    margin-bottom: 10px;
+    transform: translateY(-5px) !important;
+  }
+}
+@media (max-width: 992px) {
+  .brush-underline,
+  .underline,
+  .underline-img {
+    width: 70%;
+    margin-bottom: 8px;
+    transform: translateY(-4px) !important;
+  }
+}
+@media (max-width: 768px) {
+  .brush-underline,
+  .underline,
+  .underline-img {
+    width: 60%;
+    margin-bottom: 6px;
+    transform: translateY(-3px) !important;
+  }
+
+  .section-title,
+  .main-title,
+  .roadmap-title,
+  .nextgen-title {
+    font-size: 22px;
+    margin-bottom: 2px;
+  }
+}
+@media (max-width: 480px) {
+  .brush-underline,
+  .underline,
+  .underline-img {
+    width: 50%;
+    margin-bottom: 5px;
+    transform: translateY(-2px) !important;
+  }
+
+  .section-title,
+  .main-title,
+  .roadmap-title,
+  .nextgen-title {
+    margin-bottom: 1px;
+  }
+}

@@ -1,0 +1,245 @@
+.products-section {
+  text-align: center;
+  padding: 70px 40px;
+}
+
+/* BADGE */
+.top-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: #ffffff;
+  border-radius: 20px;
+  padding: 6px 15px;
+  font-size: 13px;
+  border: 1px solid #ddd;
+}
+
+.top-badge img {
+  width: 14px;
+}
+
+/* TITLE */
+.section-title {
+  font-size: 32px;
+  margin-top: 25px;
+  color: rgba(117, 150, 2, 1);
+  font-weight: 700;
+}
+
+/* UNDERLINE */
+.underline {
+  width: 140px;
+  height: 5px;
+  transform: translateY(-15px) !important;
+  background: #acd25e;
+  margin: 10px auto 25px;
+  border-radius: 5px;
+}
+
+/* SUBTEXT */
+.section-desc {
+  max-width: 70%;
+  margin: 0 auto 40px;
+  color: #444;
+  line-height: 1.6;
+}
+
+/* GRID */
+.products-grid {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  flex-wrap: wrap;
+}
+
+/* CARD */
+.product-card {
+  width: 250px;
+  background: #f6f6f6;
+  padding: 20px;
+  border-radius: 16px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+  text-align: left;
+  transition: 0.3s ease;
+}
+
+.product-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
+
+/* HEADER layout (IMAGE LEFT + TEXT RIGHT) */
+.card-header {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  margin-bottom: 10px;
+}
+
+.card-title-block {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  justify-content: center;
+}
+
+.product-img {
+  width: 70px;
+  height: 70px;
+  border-radius: 10px;
+}
+
+.product-title {
+  font-size: 24px;
+  font-weight: 700;
+  margin: 0 0 5px 0;
+}
+
+.Paragraph-card {
+  font-size: 10px;
+  line-height: 1.4;
+  margin-top: 16px;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+/* LIST */
+.product-card ul {
+  padding: 0;
+  margin: 10px 0 0 0;
+  list-style: none;
+}
+
+.product-card li {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin: 6px 0;
+  font-size: 14px;
+  color: #111;
+}
+
+.product-card li img {
+  width: 12px;
+}
+
+/* BUTTON */
+.explore-btn {
+  margin-top: 15px;
+  width: 100%;
+  padding: 10px 0;
+  border-radius: 30px;
+  border: none;
+  font-weight: 600;
+  cursor: pointer;
+  color: white;
+  font-size: 15px;
+}
+
+.explore-btn.red {
+  background: rgba(255, 0, 0, 1);
+}
+
+/* ========================================================= */
+/*                RESPONSIVE (PERFECT + ACCURATE)            */
+/* ========================================================= */
+
+/* ---------- TABLET (2 cards per row) ---------- */
+@media (max-width: 1024px) {
+  .section-desc {
+    max-width: 85%;
+  }
+
+  .product-card {
+    width: 45%;
+  }
+}
+
+/* ---------- MOBILE (100% width) ---------- */
+@media (max-width: 768px) {
+  .products-section {
+    padding: 50px 20px;
+  }
+
+  .section-title {
+    font-size: 26px;
+  }
+
+  .section-desc {
+    max-width: 95%;
+    font-size: 14px;
+  }
+
+  .products-grid {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .product-card {
+    width: 100%;
+    max-width: 340px;
+  }
+
+  .product-img {
+    width: 55px;
+    height: 55px;
+  }
+
+  .product-title {
+    font-size: 20px;
+  }
+
+  .Paragraph-card {
+    font-size: 12px;
+  }
+}
+
+/* ---------- SMALL MOBILE (very tight layout) ---------- */
+@media (max-width: 480px) {
+  .section-title {
+    font-size: 22px;
+  }
+
+  .product-card {
+    padding: 15px;
+  }
+
+  .product-img {
+    width: 48px;
+    height: 48px;
+  }
+
+  .product-title {
+    font-size: 18px;
+  }
+
+  .Paragraph-card {
+    font-size: 11px;
+  }
+
+  .product-card li {
+    font-size: 12px;
+  }
+}
+
+/* MOBILE — reduce brush underline size */
+@media (max-width: 768px) {
+  .underline {
+    width: 90px;
+    height: 4px;
+    transform: translateY(-10px) !important;
+    margin: 8px auto 18px;
+  }
+}
+
+/* SMALL MOBILE — even smaller brush */
+@media (max-width: 480px) {
+  .underline {
+    width: 70px;
+    height: 3px;
+    transform: translateY(-8px) !important;
+    margin: 6px auto 15px;
+  }
+}

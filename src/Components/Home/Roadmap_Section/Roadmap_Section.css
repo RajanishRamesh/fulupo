@@ -1,0 +1,279 @@
+.roadmap-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 70px;
+  align-items: center;
+  padding: 50px 0 60px;
+  font-family: "Inter", sans-serif;
+}
+
+/* LEFT IMAGE SETUP */
+.left-image-box {
+  position: relative;
+  width: 420px;
+  height: 420px;
+  margin-right: 140px;
+}
+
+
+
+
+/* RIGHT CONTENT */
+.right-content {
+  width: 480px;
+  text-align: left;
+
+}
+
+.roadmap-title {
+  font-size: 32px;
+  font-weight: 800;
+  color: #6da926;
+}
+
+.brush-underline {
+  width: 240px;
+  margin: 5px 0 25px;
+}
+
+/* STEP CARDS */
+.steps {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.step-card {
+  background: #ffffff;
+  padding: 18px 20px;
+  border-radius: 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 4px 18px rgba(0,0,0,0.08);
+}
+
+.step-left {
+  display: flex;
+  gap: 14px;
+  align-items: center;
+}
+
+.step-icon {
+  width: 44px;
+  height: 44px;
+  object-fit: contain;
+}
+
+.step-card h4 {
+  font-size: 16px;
+  font-weight: 700;
+  color: #000;
+}
+
+.step-card p {
+  font-size: 14px;
+  color: #555;
+  margin-top: 2px;
+}
+
+/* STATUS TAGS */
+.tag {
+  padding: 6px 18px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 700;
+  color: #fff;
+}
+
+.green {
+  background: #5dbb48;
+}
+
+.dark-green {
+  background: #4a7f38;
+}
+
+.olive {
+  background: #98a94b;
+}
+
+/* ========================================================= */
+/*                  RESPONSIVE – ROADMAP UI                  */
+/* ========================================================= */
+
+/* ---------- TABLET (max-width: 1024px) ---------- */
+@media (max-width: 1024px) {
+
+  .roadmap-wrapper {
+    flex-direction: column;
+    gap: 35px;
+    padding: 40px 20px 50px;
+    text-align: center;
+  }
+
+  .left-image-box {
+    width: 340px;
+    height: 340px;
+    margin-right: 0;
+  }
+
+  .right-content {
+    width: 80%;
+    text-align: center;
+  }
+
+  .roadmap-title {
+    font-size: 28px;
+  }
+
+  .brush-underline {
+    width: 180px;
+  }
+}
+
+/* ---------- MOBILE (max-width: 768px) ---------- */
+@media (max-width: 768px) {
+
+  .roadmap-wrapper {
+    padding: 35px 20px 40px;
+  }
+
+  .left-image-box {
+    width: 280px;
+    height: 280px;
+  }
+
+  .right-content {
+    width: 100%;
+  }
+
+  .roadmap-title {
+    font-size: 26px;
+  }
+
+  .brush-underline {
+    width: 150px;
+    margin: 6px auto 20px;
+  }
+
+  /* Step Cards (Full width, clean look) */
+  .steps {
+    gap: 16px;
+  }
+
+  .step-card {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 16px 18px;
+    gap: 10px;
+    text-align: left;
+  }
+
+  .step-left {
+    gap: 12px;
+  }
+
+  .step-icon {
+    width: 40px;
+    height: 40px;
+  }
+
+  .step-card h4 {
+    font-size: 15px;
+  }
+
+  .step-card p {
+    font-size: 13px;
+  }
+
+  /* Status Tag moves to bottom-right with spacing */
+  .tag {
+    align-self: flex-end;
+    font-size: 11px;
+    padding: 6px 14px;
+  }
+}
+
+/* ---------- SMALL MOBILE (max-width: 480px) ---------- */
+@media (max-width: 480px) {
+
+  .left-image-box {
+    width: 230px;
+    height: 230px;
+  }
+
+  .roadmap-title {
+    font-size: 22px;
+  }
+
+  .brush-underline {
+    width: 120px;
+  }
+
+  .steps {
+    gap: 14px;
+  }
+
+  .step-card {
+    padding: 14px 16px;
+  }
+
+  .step-left {
+    gap: 10px;
+  }
+
+  .step-icon {
+    width: 34px;
+    height: 34px;
+  }
+
+  .step-card h4 {
+    font-size: 14px;
+  }
+
+  .step-card p {
+    font-size: 12px;
+  }
+
+  .tag {
+    font-size: 10px;
+    padding: 5px 12px;
+  }
+}
+/* Tablet */
+@media (max-width: 1024px) {
+  .left-image-box {
+    width: 340px;
+    height: 340px;
+  }
+  .left-image-box img {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .left-image-box {
+    width: 280px;
+    height: 280px;
+  }
+  .left-image-box img {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+/* Small Mobile */
+@media (max-width: 480px) {
+  .left-image-box {
+    width: 220px;
+    height: 220px;
+  }
+  .left-image-box img {
+    width: 100%;
+    height: 100%;
+  }
+}

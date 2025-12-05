@@ -1,0 +1,222 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+
+* {
+  font-family: "Inter", sans-serif;
+}
+
+.seamless-section {
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  padding: 80px 40px 130px;
+  position: relative;
+}
+
+/* OVERLAY */
+.overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 40, 0, 0.55);
+  z-index: 1;
+}
+
+/* CONTENT */
+.seamless-content {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  color: #fff;
+  max-width: 1100px;
+  margin: auto;
+}
+
+/* BADGE */
+.seamless-badge {
+  background: #ffffff;
+  color: #000;
+  padding: 10px 26px;
+  border-radius: 30px;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 15px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.15);
+}
+
+.seamless-badge img {
+  width: 18px;
+  height: 18px;
+  object-fit: contain;
+}
+
+/* TITLE */
+.seamless-title {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  font-size: 45px;
+  color: #f4c542;
+  font-weight: 700;
+}
+
+/* UNDERLINE */
+.yellow-underline {
+  width: 260px;
+  height: 40px;
+  margin: 0 auto 10px;
+  background: url("../../../Assets/SeamlessSection/Line.png") no-repeat center;
+  background-size: contain;
+}
+
+/* DESCRIPTION */
+.seamless-desc {
+  width: 65%;
+  margin: 0 auto;
+  font-size: 17px;
+  line-height: 1.65;
+  color: #e5e5e5;
+}
+
+/* PILL BOX */
+.seamless-pill-box {
+  background: #fff;
+  padding: 18px 35px;
+  border-radius: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 900px;
+  margin: 25px auto 0;
+  gap: 20px;
+  flex-wrap: nowrap;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+}
+
+/* PILLS */
+.pill {
+  color: #000;
+  padding: 12px 22px;
+  border-radius: 30px;
+  font-weight: 600;
+  font-size: 15px;
+  white-space: nowrap;
+  transition: 0.3s ease;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.pill img {
+  width: 30px;
+  height: 30px;
+  object-fit: contain;
+}
+
+.pill:hover {
+  color: #053812;
+  cursor: pointer;
+}
+
+/* ------------------------------ */
+/*        RESPONSIVE RULES        */
+/* ------------------------------ */
+
+/* 📌 Laptop / Large tablets */
+@media (max-width: 991px) {
+  .seamless-title {
+    font-size: 34px;
+  }
+
+  .seamless-desc {
+    width: 80%;
+    font-size: 16px;
+  }
+
+  .seamless-pill-box {
+    flex-wrap: wrap;
+    gap: 18px;
+    padding: 15px 25px;
+  }
+}
+
+/* 📌 Tablets */
+@media (max-width: 768px) {
+  .seamless-section {
+    padding: 60px 25px 110px;
+  }
+
+  .seamless-desc {
+    width: 90%;
+  }
+
+  .seamless-pill-box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 350px;
+    overflow: hidden;
+  }
+
+  .pill {
+    padding: 10px 18px;
+    font-size: 14px;
+  }
+
+  .seamless-title {
+    font-size: 30px;
+  }
+}
+
+/* 📌 Mobile */
+@media (max-width: 480px) {
+  .seamless-title {
+    font-size: 26px;
+  }
+  .seamless-pill-box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .pill {
+    padding: 8px 16px;
+    font-size: 13px;
+  }
+
+  .yellow-underline {
+    width: 150px;
+    height: 28px;
+  }
+
+  .seamless-pill-box {
+    border-radius: 35px;
+    padding: 15px 18px;
+  }
+}
+
+/* 📌 Very Small Phones */
+@media (max-width: 380px) {
+  .pill {
+    font-size: 12px;
+    gap: 6px;
+  }
+
+  .seamless-pill-box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .pill img {
+    width: 24px;
+    height: 24px;
+  }
+
+  .seamless-desc {
+    width: 100%;
+    font-size: 15px;
+  }
+}
