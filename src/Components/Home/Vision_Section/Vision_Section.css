@@ -223,10 +223,16 @@
   }
 
   .quote-left {
-    left: 15px;
-  }
+  position: absolute;
+  top: 25px;        /* move up/down */
+  left: 10px;       /* move left/right */
+  z-index: 20;
+}
 
-  .quote-right {
-    right: 15px;
-  }
+.quote-right {
+  position: absolute;
+  bottom: 25px;     /* move up/down (from bottom) */
+  right: 25px;      /* move left/right */
+  z-index: 20;
+}
 }

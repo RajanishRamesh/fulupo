@@ -54,7 +54,7 @@ export default function DemoContact() {
           <div className="circle-icon">
             <img src={CallIcon} className="circle-inner-icon" alt="call" />
           </div>
-          <div>
+          <div className="call-us">
             <h4>Call Us</h4>
             <p>+91 9600043880</p>
           </div>
@@ -65,14 +65,13 @@ export default function DemoContact() {
           <div className="circle-icon">
             <img src={MailIcon} className="circle-inner-icon" alt="mail" />
           </div>
-          <div>
+          <div className="email-us">
             <h4>Email Us</h4>
             <p>info@fulupo.ai</p>
           </div>
         </div>
 
         <button className="expert-btn">
-          
           Contact Expert
         </button>
       </div>

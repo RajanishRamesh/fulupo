@@ -1,11 +1,10 @@
 .revolution-wrapper {
   width: 100%;
-
   background-size: cover;
   background-position: center;
-  padding: 210px 0 130px;
   position: relative;
-  margin-top: 130px;
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 
 .overlay {
@@ -61,7 +60,7 @@
 /* DESCRIPTION */
 .revolution-desc {
   font-size: 16px;
-  width: 65%;
+  width: 80%;
   margin: 0 auto 35px;
   line-height: 1.6;
 }
@@ -104,4 +103,17 @@
 .btn-outline:hover {
   background: #fff;
   color: #000;
+}
+
+@media (max-width: 1024px){
+  .revolution-desc{
+    width: 100%;
+  }
+}
+
+@media (max-width:768px){
+  .revolution-buttons{
+    display: flex;
+    flex-direction: column;
+  }
 }

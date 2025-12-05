@@ -15,7 +15,7 @@ export default function Vision_Section() {
       <div className="vision-card">
 
         {/* LEFT QUOTES */}
-        <img src={QuoteLeft} alt="quote" className="quote-left" />
+        {/* <img src={QuoteLeft} alt="quote" className="quote-left" /> */}
 
         <div className="vision-content">
           <h2 className="vision-title">
@@ -36,7 +36,7 @@ export default function Vision_Section() {
         </div>
 
         {/* RIGHT QUOTES */}
-        <img src={QuoteRight} alt="quote" className="quote-right" />
+        {/* <img src={QuoteRight} alt="quote" className="quote-right" /> */}
 
         {/* YELLOW ARC */}
         <div className="vision-circle">

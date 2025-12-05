@@ -6,9 +6,8 @@
   max-width: 1096px;
   height: 650px;
   display: flex;
-  background: url("../../../Assets/Home/Contacts_Section/1.jpg");
-  background-size: cover;
-  background-position: center;
+  justify-content: space-between;
+  background: url("../../../Assets/Home/Contacts_Section/1.jpg") center/cover no-repeat;
   padding: 40px;
   border-radius: 83px;
   gap: 40px;
@@ -23,23 +22,24 @@
   position: absolute;
   inset: 0;
   background: rgba(0, 0, 0, 0.72);
-  border-radius: 83px;
+  border-radius: 20px;
   z-index: 1;
 }
 
-/* CONTENT ABOVE OVERLAY */
-.contact-wrapper > * {
+.contact-wrapper>* {
   position: relative;
   z-index: 2;
 }
 
-/* LEFT CARD */
+/* ============================================= */
+/*                  LEFT CARD                   */
+/* ============================================= */
 .left-card {
   width: 45%;
   background: #ffffff;
   border-radius: 30px;
   padding: 40px;
-  box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
 }
 
 .demo-icon-img {
@@ -52,7 +52,6 @@
   font-size: 28px;
   font-weight: 800;
   color: #66a80f;
-  line-height: 1.2;
 }
 
 .demo-desc {
@@ -61,27 +60,26 @@
   color: #333;
 }
 
-/* BULLET LIST */
+/* List */
 .demo-list {
   list-style: none;
   padding: 0;
-  margin: 0 0 30px;
+  margin-bottom: 30px;
 }
 
 .demo-list li {
   font-size: 15px;
   margin-bottom: 12px;
   display: flex;
-  align-items: center;
   gap: 10px;
+  align-items: center;
 }
 
 .tick-icon {
   width: 18px;
-  height: 18px;
 }
 
-/* RED BUTTON */
+/* Button */
 .schedule-btn {
   width: 100%;
   padding: 14px 0;
@@ -94,11 +92,13 @@
   cursor: pointer;
 }
 
-/* RIGHT CARD */
+/* ============================================= */
+/*                 RIGHT CARD                   */
+/* ============================================= */
 .right-card {
   width: 55%;
   color: #fff;
-  padding: 20px 0;
+  padding-top: 10px;
 }
 
 .right-title {
@@ -111,80 +111,91 @@
 .right-desc {
   width: 85%;
   margin-bottom: 30px;
+  line-height: 1.6;
   color: #eee;
 }
 
-/* CONTACT ROWS */
 .info-row {
   display: flex;
   align-items: center;
-  gap: 15px;
-  margin-bottom: 25px;
 }
 
-/* WHITE CIRCLE ICON */
 .circle-icon {
   width: 58px;
   height: 58px;
   background: #ffffff;
   border-radius: 50%;
   display: flex;
-  align-items: center;
   justify-content: center;
-  box-shadow: 0px 2px 8px rgba(0,0,0,0.22);
+  align-items: center;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.22);
 }
 
 .circle-inner-icon {
   width: 28px;
-  height: 28px;
-  object-fit: contain;
 }
 
-/* GREEN BUTTON (FIGMA EXACT) */
+.call-us{
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
 .expert-btn {
   width: 347px;
   height: 56px;
   background: #7cb518;
   border: none;
-  border-radius: 42.8px;
-  padding: 10.55px 40.32px;
+  border-radius: 42px;
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 6.2px;
+  gap: 8px;
   font-size: 16px;
   font-weight: 600;
-  cursor: pointer;
   color: #fff;
+  cursor: pointer;
 }
 
 .btn-icon {
   width: 22px;
-  height: 22px;
 }
 
 /* ============================================= */
-/*               RESPONSIVE DESIGN              */
+/*               NEW RESPONSIVE UI              */
 /* ============================================= */
 
-/* ===== Laptop (max 1200px) ===== */
+/* ---------------- Laptop (1200px ↓) ---------------- */
 @media (max-width: 1200px) {
   .contact-wrapper {
-    height: auto;
+    max-width: 960px;
+    height: 560px;
     padding: 30px;
+    border-radius: 70px;
+    gap: 30px;
+  }
+
+  .left-card {
+    padding: 32px;
+  }
+
+  .right-card {
+    padding-top: 10px;
   }
 
   .right-desc {
-    width: 95%;
+    width: 90%;
   }
 }
 
-/* ===== Tablet (max 992px) ===== */
+/* ---------------- Tablet (992px ↓) ---------------- */
 @media (max-width: 992px) {
   .contact-wrapper {
     flex-direction: column;
     height: auto;
-    padding: 30px 25px;
+    padding: 32px 26px;
+    border-radius: 55px;
+    gap: 28px;
   }
 
   .left-card,
@@ -192,44 +203,102 @@
     width: 100%;
   }
 
+  .demo-title {
+    font-size: 26px;
+  }
+
+  .right-title {
+    font-size: 28px;
+  }
+
+  .right-desc {
+    width: 100%;
+    font-size: 15px;
+  }
+
+  .circle-icon {
+    width: 50px;
+    height: 50px;
+  }
+
+  .circle-inner-icon {
+    width: 24px;
+  }
+
   .expert-btn {
     width: 100%;
   }
 }
 
-/* ===== Mobile Large (max 768px) ===== */
+/* ---------------- Mobile Large (768px ↓) ---------------- */
 @media (max-width: 768px) {
   .contact-wrapper {
-    padding: 25px 20px;
-    border-radius: 50px;
+    width: 90%;
+    padding: 22px 18px;
+    border-radius: 45px;
   }
 
   .left-card {
-    padding: 30px;
+    width: 90%;
+    align-self: center;
+    justify-self: center;
+  }
+
+  .demo-icon-img {
+    margin-bottom: 0px;
   }
 
   .demo-title {
-    font-size: 24px;
+    font-size: 22px;
+  }
+
+  .demo-desc {
+    font-size: 14px;
+  }
+
+  .demo-list li {
+    font-size: 14px;
   }
 
   .right-title {
-    font-size: 26px;
+    font-size: 24px;
   }
+.right-desc {
+  width: 100%;
+  margin-bottom: 25px;
+}
 
   .circle-icon {
-    width: 48px;
-    height: 48px;
+    width: 44px;
+    height: 44px;
   }
 
   .circle-inner-icon {
-    width: 22px;
+    width: 20px;
+  }
+
+  .expert-btn {
+    height: 50px;
+    width: 250px !important;
+    font-size: 15px;
+    justify-self: center;
+    align-self: center;
   }
 }
 
-/* ===== Mobile Small (max 480px) ===== */
+.demo-list {
+  margin-bottom: 10px;
+}
+
+.demo-desc {
+  margin-bottom: 15px;
+}
+
+/* ---------------- Mobile Small (480px ↓) ---------------- */
 @media (max-width: 480px) {
   .contact-wrapper {
-    padding: 20px 15px;
+    padding: 18px 14px;
+    border-radius: 40px;
   }
 
   .left-card {
@@ -237,29 +306,66 @@
   }
 
   .demo-title {
-    font-size: 22px;
+    font-size: 20px;
   }
 
-  .demo-desc,
+  .demo-desc {
+    font-size: 13px;
+  }
+
   .demo-list li {
-    font-size: 14px;
+    font-size: 13px;
   }
 
   .right-title {
-    font-size: 22px;
+    font-size: 20px;
   }
 
   .right-desc {
-    width: 100%;
-    font-size: 14px;
+    font-size: 13px;
+  }
+
+  .circle-icon {
+    width: 40px;
+    height: 40px;
+  }
+
+  .circle-inner-icon {
+    width: 18px;
   }
 
   .expert-btn {
     width: 100%;
-    height: 50px;
+    height: 48px;
+    font-size: 14px;
   }
 
   .info-row {
-    gap: 10px;
+    gap: 15px;
   }
+}
+
+
+/* FIX FOR CALL-US AND EMAIL-US SPACING */
+.info-row {
+  display: flex;
+  align-items: center;
+  gap: 16px;  /* adds clean spacing between icon and text */
+  margin-bottom: 22px; /* spacing between rows */
+}
+
+.call-us h4,
+.call-us p,
+.email-us h4,
+.email-us p {
+  margin: 0;              /* remove default browser margins */
+  padding: 0;             /* remove default padding */
+  line-height: 1.2;       /* tighter clean spacing */
+}
+
+.call-us,
+.email-us {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;  /* small gap between title and number/email */
 }
