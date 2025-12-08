@@ -16,7 +16,15 @@ function Footer() {
 
         {/* LEFT SIDE */}
         <div className="footer-left">
-          <img src={FooterLogo} className="footer-logo" alt="Fulupo" />
+
+          {/* CLICKABLE LOGO (scrolls to top) */}
+          <img 
+            src={FooterLogo} 
+            className="footer-logo" 
+            alt="Fulupo"
+            onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
+            style={{ cursor: "pointer" }}
+          />
 
           <p className="footer-desc">
             AI-powered store management SaaS platform revolutionizing retail

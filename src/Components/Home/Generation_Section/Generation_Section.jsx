@@ -9,8 +9,8 @@ import icon4 from "../../../Assets/Home/Generation_Section/4.png";
 import SparkleIcon from "../../../Assets/Home/Generation_Section/Sparkle.png";
 import BrushLine from "../../../Assets/Home/Generation_Section/Brush_Line.png";
 
-// ⭐ Grass import
-import GrassImg from "../../../Assets/Home/Generation_Section/Border.png";
+
+
 
 export default function Generation_Section() {
   return (
@@ -82,7 +82,7 @@ export default function Generation_Section() {
       </div>
 
       {/* ⭐ GRASS BORDER BOTTOM */}
-      <img src={GrassImg} alt="grass" className="grass-border" />
+      
 
     </section>
   );

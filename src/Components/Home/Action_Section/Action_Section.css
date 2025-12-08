@@ -237,7 +237,6 @@ transform: translateY(-22px);
   .features li {
     align-self: flex-start;
     justify-content: center;
-    align-items: center;
   }
 
   .demo-heading {

@@ -198,11 +198,15 @@
     gap: 28px;
   }
 
-  .left-card,
-  .right-card {
+  .left-card {
     width: 100%;
   }
 
+  .right-card{
+    width: 90%;
+    justify-self: center;
+    align-self: center;
+  }
   .demo-title {
     font-size: 26px;
   }

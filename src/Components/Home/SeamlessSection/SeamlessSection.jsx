@@ -38,16 +38,40 @@ function SeamlessSection() {
 
         {/* FEATURE PILLS */}
         <div className="seamless-pill-box">
+
           <div className="pill">
+            <img className="img1" src={PillIcon} alt="" /> <span>Real-time Sync</span>
+          </div>
+
+          <div className="pill">
+            <img src={PillIcon} alt="" /> <span>Single Login</span>
+          </div>
+
+          <div className="pill">
+            <img src={PillIcon} alt="" /> <span>Unified Dashboard</span>
+          </div>
+
+          <div className="pill">
+            <img src={PillIcon} alt="" /> <span>Cross-Platform Data</span>
+          </div>
+
+          <div className="pill">
+            <img src={PillIcon} alt="" /> <span>AI-Powered Insights</span>
+          </div>
+
+        </div>
+
+        <div className="seamless-pill-box1">
+          <div className="pill1">
             <span className="pill-slug">Real-time Sync</span>
             <img src={PillIcon} alt="" />
             <span className="pill-slug">Single Login</span>
             <img src={PillIcon} alt="" />
-            <span  className="pill-slug">Unified Dashboard</span>
+            <span className="pill-slug">Unified Dashboard</span>
             <img src={PillIcon} alt="" />
             <span className="pill-slug">Cross-Platform Data</span>
             <img src={PillIcon} alt="" />
-            <span  className="pill-slug">AI-Powered Insights</span>
+            <span className="pill-slug">AI-Powered Insights</span>
           </div>
         </div>
 

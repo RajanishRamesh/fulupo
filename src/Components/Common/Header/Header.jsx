@@ -7,36 +7,15 @@ const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);
   const [activeSection, setActiveSection] = useState("home");
 
-  //   const handleScroll = () => {
-  //   let scrollY = window.pageYOffset;
-
-  //   // FIX: If page is at the top, set home as active
-  //   if (scrollY < 150) {
-  //     setActiveSection("home");
-  //     return;
-  //   }
-
-  //   sections.forEach((sec) => {
-  //     const sectionTop = sec.offsetTop - 200;
-  //     const sectionHeight = sec.offsetHeight;
-  //     const sectionId = sec.getAttribute("id");
-
-  //     if (scrollY >= sectionTop && scrollY < sectionTop + sectionHeight) {
-  //       setActiveSection(sectionId);
-  //     }
-  //   });
-  // };
-
   useEffect(() => {
     const sections = document.querySelectorAll("section[id]");
 
     const handleScroll = () => {
       let scrollY = window.pageYOffset;
-
       let current = "home"; // default
 
       sections.forEach((sec) => {
-        const top = sec.offsetTop - 200;  // larger offset for deep sections
+        const top = sec.offsetTop - 200; 
         const height = sec.offsetHeight;
         const id = sec.id;
 
@@ -48,10 +27,9 @@ const Header = () => {
       setActiveSection(current);
     };
 
-
     window.addEventListener("scroll", handleScroll);
 
-    // run once on refresh load
+    // run once on refresh
     setTimeout(() => handleScroll(), 150);
 
     return () => window.removeEventListener("scroll", handleScroll);
@@ -60,8 +38,12 @@ const Header = () => {
   return (
     <header className="pro-header">
 
-      {/* LEFT LOGO */}
-      <div className="pro-left">
+      {/* LEFT LOGO (Scroll to Top on Click) */}
+      <div
+        className="pro-left"
+        onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
+        style={{ cursor: "pointer" }}
+      >
         <img src={Logo} alt="logo" className="pro-logo" />
       </div>
 
@@ -69,6 +51,8 @@ const Header = () => {
       <div className="pro-hamburger" onClick={() => setMenuOpen(!menuOpen)}>
         <span></span><span></span><span></span>
       </div>
+
+      {/* NAV LINKS */}
       <nav className={`pro-nav ${menuOpen ? "active" : ""}`}>
         <a href="#home" className={`pro-link ${activeSection === "home" ? "active" : ""}`}>Home</a>
         <a href="#products" className={`pro-link ${activeSection === "products" ? "active" : ""}`}>Products</a>

@@ -187,3 +187,54 @@
   }
 }
 
+/* Hide mobile feature list by default (desktop only) */
+.is-feature-list {
+  display: none;
+}
+
+/* Mobile Feature Layout (<768px) */
+@media (max-width: 768px) {
+
+  /* Hide center image on mobile */
+  .is-center-container {
+    display: none;
+  }
+
+  /* Show mobile feature list */
+  .is-feature-list {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin-top: 30px;
+    padding: 0 20px;
+  }
+
+  .is-feature {
+    background: rgba(255, 255, 255, 0.08);
+    padding: 10px;
+    border-radius: 14px;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+  }
+
+  .is-feature img {
+    width: 24px;
+    height: 24px;
+  }
+
+  .is-feature h3 {
+    font-size: 18px;
+    font-weight: 700;
+    color: #f9b31a;
+    margin: 0 !important
+  }
+
+  .is-feature p {
+    font-size: 14px;
+    line-height: 1.5;
+    color: #eaeaea;
+    margin: 0 !important;
+  }
+}

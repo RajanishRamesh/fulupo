@@ -4,6 +4,7 @@
   font-family: "Inter", sans-serif;
 }
 
+/* SECTION */
 .seamless-section {
   width: 100%;
   background-size: cover;
@@ -42,13 +43,12 @@
   font-size: 15px;
   font-weight: 600;
   margin-bottom: 20px;
-  box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.15);
+  box-shadow: 0px 4px 14px rgba(0,0,0,0.15);
 }
 
 .seamless-badge img {
   width: 18px;
   height: 18px;
-  object-fit: contain;
 }
 
 /* TITLE */
@@ -78,145 +78,117 @@
   color: #e5e5e5;
 }
 
-/* PILL BOX */
+/* ============================= */
+/* DESKTOP DEFAULT (≥ 1024px)    */
+/* ============================= */
+
 .seamless-pill-box {
+  display: none !important;
+}
+
+.seamless-pill-box1 {
+  display: flex !important;
   background: #fff;
   padding: 18px 35px;
   border-radius: 50px;
-  display: flex;
   justify-content: center;
   align-items: center;
-  max-width: 900px;
+  max-width: 1000px;
   margin: 25px auto 0;
-  gap: 20px;
-  flex-wrap: nowrap;
-  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 6px 18px rgba(0,0,0,0.15);
 }
 
-/* PILLS */
-.pill {
-  color: #000;
-  padding: 12px 22px;
-  border-radius: 30px;
-  font-weight: 600;
-  font-size: 15px;
-  white-space: nowrap;
-  transition: 0.3s ease;
+.pill1 {
   display: flex;
   align-items: center;
-  gap: 10px;
+  justify-content: center;
+  gap: 20px;
+  font-weight: 600;
+  font-size: 15px;
+  color: #000;
+  white-space: nowrap;
 }
 
-.pill img {
-  width: 30px;
-  height: 30px;
-  object-fit: contain;
+.pill1 img{
+  height: 20px;
+  width: 20px;
 }
 
-.pill:hover {
-  color: #053812;
-  cursor: pointer;
-}
+/* ============================= */
+/*  MOBILE + TABLET (< 1024px)   */
+/* ============================= */
 
-/* ------------------------------ */
-/*        RESPONSIVE RULES        */
-/* ------------------------------ */
+@media (max-width: 1024px) {
 
-/* 📌 Laptop / Large tablets */
-@media (max-width: 991px) {
-  .seamless-title {
-    font-size: 34px;
-  }
-
-  .seamless-desc {
-    width: 80%;
-    font-size: 16px;
-  }
-
+  /* show mobile list */
   .seamless-pill-box {
-    flex-wrap: wrap;
-    gap: 18px;
-    padding: 15px 25px;
-  }
-}
-
-/* 📌 Tablets */
-@media (max-width: 768px) {
-  .seamless-section {
-    padding: 60px 25px 110px;
-  }
-
-  .seamless-desc {
-    width: 90%;
-  }
-
-  .seamless-pill-box{
-    display: flex;
+    display: flex !important;
     flex-direction: column;
+    gap: 14px;
+    padding: 0 !important;
+    margin-top: 25px;
     align-items: center;
-    justify-content: center;
-    max-width: 350px;
-    overflow: hidden;
+    background: transparent !important;
+    box-shadow: none !important;
+  }
+
+  /* hide desktop pill box */
+  .seamless-pill-box1 {
+    display: none !important;
   }
 
   .pill {
-    padding: 10px 18px;
-    font-size: 14px;
+    background: white;
+    padding: 12px 18px;
+    border-radius: 30px;
+    width: 100%;
+    max-width: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    color: black;
+    font-size: 15px;
+    padding-left: 30px;
+    justify-content: flex-start;
+    border-bottom: 1px dashed rgba(255,255,255,0.3);
   }
 
-  .seamless-title {
-    font-size: 30px;
+  .pill:last-child {
+    border-bottom: none;
+  }
+
+  .pill img {
+    width: 20px;
+    height: 20px;
+  }
+
+  .img1 {
+    display: block !important;
   }
 }
 
-/* 📌 Mobile */
+/* ============================= */
+/* MOBILE SMALL SIZES            */
+/* ============================= */
+
 @media (max-width: 480px) {
-  .seamless-title {
-    font-size: 26px;
-  }
-  .seamless-pill-box{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-  }
-
   .pill {
-    padding: 8px 16px;
-    font-size: 13px;
+    font-size: 13px !important;
+  }
+  .pill img {
+    width: 16px;
+    height: 16px;
   }
 
   .yellow-underline {
     width: 150px;
     height: 28px;
   }
-
-  .seamless-pill-box {
-    border-radius: 35px;
-    padding: 15px 18px;
-  }
 }
 
-/* 📌 Very Small Phones */
 @media (max-width: 380px) {
   .pill {
     font-size: 12px;
-    gap: 6px;
-  }
-
-  .seamless-pill-box{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-  }
-  .pill img {
-    width: 24px;
-    height: 24px;
-  }
-
-  .seamless-desc {
-    width: 100%;
-    font-size: 15px;
   }
 }
