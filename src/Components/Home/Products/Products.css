@@ -27,15 +27,46 @@
   font-weight: 700;
 }
 
-/* UNDERLINE */
-.underline {
-  width: 140px;
-  height: 5px;
-  transform: translateY(-15px) !important;
-  background: #acd25e;
-  margin: 10px auto 25px;
-  border-radius: 5px;
+/* ===================== UNDERLINE ===================== */
+.underline-products {
+  width: 390px;
+  height: 15px;
+  background: url("../../../Assets/Home/FMCG_Section/Greenline.png") no-repeat center;
+  background-size: contain;
+
+  /* Center alignment */
+  margin: 12px auto 20px; /* top | left-right | bottom */
+
+  display: block;
 }
+
+
+
+/* DESKTOP ONLY — hover effect */
+@media (min-width: 1025px) {
+  .underline:hover {
+    transform: translateY(-5px);
+  }
+}
+
+/* TABLET — NO transform override */
+@media (max-width: 768px) {
+  .underline {
+    width: 90px;
+    height: 4px;
+    margin: 8px auto 18px;
+  }
+}
+
+/* SMALL MOBILE — NO transform override */
+@media (max-width: 480px) {
+  .underline {
+    width: 70px;
+    height: 3px;
+    margin: 6px auto 15px;
+  }
+}
+/* ===================================================== */
 
 /* SUBTEXT */
 .section-desc {
@@ -62,6 +93,7 @@
   box-shadow: 0 4px 15px rgba(0,0,0,0.08);
   text-align: left;
   transition: 0.3s ease;
+  cursor: pointer;
 }
 
 .product-card:hover {
@@ -142,7 +174,7 @@
 }
 
 /* ========================================================= */
-/*                RESPONSIVE (PERFECT + ACCURATE)            */
+/*                RESPONSIVE LAYOUT                          */
 /* ========================================================= */
 
 /* ---------- TABLET (2 cards per row) ---------- */
@@ -224,22 +256,18 @@
   }
 }
 
-/* MOBILE — reduce brush underline size */
-@media (max-width: 768px) {
-  .underline {
-    width: 90px;
-    height: 4px;
-    transform: translateY(-10px) !important;
-    margin: 8px auto 18px;
+@media (max-width: 1024px) {
+  .underline-products {
+    width: 260px;
+    height: 10px;
+    margin: 10px auto 18px;
   }
 }
 
-/* SMALL MOBILE — even smaller brush */
-@media (max-width: 480px) {
-  .underline {
-    width: 70px;
-    height: 3px;
-    transform: translateY(-8px) !important;
-    margin: 6px auto 15px;
+@media (max-width: 768px) {
+  .underline-products {
+    width: 200px;
+    height: 8px;
+    margin: 8px auto 15px;
   }
 }

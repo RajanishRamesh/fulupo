@@ -28,7 +28,7 @@ export default function Roadmap() {
       {/* RIGHT CONTENT */}
       <div className="right-content">
         <h2 className="roadmap-title">Innovation Roadmap</h2>
-        <img src={Brush} className="brush-underline" alt="" />
+        <img src={Brush} className="brush-underlineone" alt="" />
 
         <div className="steps">
 

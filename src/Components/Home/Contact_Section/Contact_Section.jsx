@@ -1,7 +1,6 @@
 import React from "react";
 import "./Contact_Section.css";
 
-// Import icons
 import DemoIcon from "../../../Assets/Home/Contacts_Section/Prof.png";
 import TickIcon from "../../../Assets/Home/Contacts_Section/GreenDot.png";
 import CallIcon from "../../../Assets/Home/Contacts_Section/Phone.png";

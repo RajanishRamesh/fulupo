@@ -24,13 +24,12 @@ const HomePage = () => {
       <section id="features"><IntelligentStore /></section>
       <section id="features"><WhyFlupo /></section>
 
-      {/* DEMO SECTION MUST HAVE ID="action" */}
+     
       <section id="demo"><Action_Section /></section>
 
-      {/* CONTACT (optional) */}
+      
       <section id="demo"><Contact_Section /></section>
 
-      {/* FUTURE SECTION MUST HAVE ID="generation" */}
       <section id="future"><Generation_Section /></section>
       <section id="future"><Roadmap /></section>
       <section id="future"><VisionSection /></section>

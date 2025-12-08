@@ -21,7 +21,7 @@ export default function FMCG_Section() {
     <div className="fmcg-wrapper">
         <center>
       <h2  className="main-title" >Fresh Produce & FMCG Management</h2></center>
-      <div className="underline"></div>
+      <div className="underline-green"></div>
 
       <div className="cards-row">
 

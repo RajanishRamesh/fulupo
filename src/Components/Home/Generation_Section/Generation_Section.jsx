@@ -26,7 +26,7 @@ export default function Generation_Section() {
 
         <h2 className="nextgen-title">The Next Generation</h2>
 
-        <img src={BrushLine} alt="underline" className="underline-img" />
+        <img src={BrushLine} alt="underline" className="underline-one" />
 
         <p className="nextgen-desc">
           Introducing PRODUCER Tech - the future of unmanned retail stores.

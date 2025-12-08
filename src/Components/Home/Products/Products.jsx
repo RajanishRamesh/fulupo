@@ -20,7 +20,7 @@ function ProductsSection() {
 
       {/* TITLE */}
       <h2 className="section-title">Four Integrated Products</h2>
-      <div className="underline"></div>
+      <div className="underline-products"></div>
 
       {/* SUBTEXT */}
       <p className="section-desc">

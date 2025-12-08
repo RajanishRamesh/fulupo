@@ -3,26 +3,25 @@
 ======================================================= */
 .stats-wrapper {
   width: 100%;
-  height: auto;
   display: flex;
   justify-content: center;
-  margin-top: -50px; 
+  margin-top: -50px;
   position: relative;
   z-index: 10;
 }
 
 /* =======================================================
-   STATS CONTAINER
+   STATS CONTAINER (DESKTOP)
 ======================================================= */
 .stats-container {
-  width: 75%;
+  width: 80%;
   background: rgba(117, 150, 2, 1);
   padding: 35px 45px;
-  border-radius: 40px;
+  border-radius: 35px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 40px;
+  gap: 35px;
   box-shadow: 0px 8px 30px rgba(0, 0, 0, 0.12);
 }
 
@@ -32,14 +31,13 @@
 .stat-item {
   display: flex;
   align-items: center;
-  gap: 18px;
+  gap: 16px;
   flex: 1;
-  min-width: 220px;
 }
 
 .stat-icon-box {
-  width: 60px;
-  height: 60px;
+  width: 62px;
+  height: 62px;
   background: #ffffff;
   border-radius: 18px;
   display: flex;
@@ -48,120 +46,86 @@
 }
 
 .stat-icon-box img {
-  width: 38px;
-  height: auto;
+  width: 36px;
 }
 
 .stat-content h2 {
-  color: #ffffff;
+  color: #fff;
   font-size: 34px;
   font-weight: 700;
   margin: 0;
 }
 
 .stat-content p {
-  color: #ffffff;
+  margin: 0;
+  margin-top: 4px;
+  color: #fff;
   font-size: 15px;
   opacity: 0.9;
-  margin: 0;
 }
 
-/* =========================================================
-   TABLET RESPONSIVE (max-width: 1024px)
-========================================================= */
+/* =======================================================
+   TABLET (768px – 1024px)
+======================================================= */
 @media (max-width: 1024px) {
   .stats-container {
-    width: 85%;
-    padding: 30px 35px;
+    width: 90%;
     gap: 30px;
-  }
-
-  .stat-content h2 {
-    font-size: 30px;
-  }
-
-  .stat-content p {
-    font-size: 14px;
+    padding: 30px 30px;
   }
 
   .stat-icon-box {
-    width: 55px;
-    height: 55px;
+    width: 56px;
+    height: 56px;
   }
 
   .stat-icon-box img {
-    width: 32px;
-  }
-}
-
-/* =========================================================
-   MOBILE RESPONSIVE (max-width: 768px)
-========================================================= */
-@media (max-width: 768px) {
-  .stats-wrapper {
-    margin-top: -30px;
-  }
-
-  .stats-container {
-    width: 90%;
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 28px 25px;
-    gap: 22px;
-    border-radius: 30px;
-  }
-
-  .stat-item {
-    width: 100%;
-    justify-content: flex-start;
-    gap: 16px;
+    width: 30px;
   }
 
   .stat-content h2 {
-    font-size: 26px;
+    font-size: 28px;
   }
 
   .stat-content p {
     font-size: 14px;
   }
+}
+
+/* =======================================================
+   MOBILE (max-width: 768px)
+======================================================= */
+@media (max-width: 768px) {
+  .stats-wrapper {
+    margin-top: -20px;
+  }
+
+  .stats-container {
+    flex-direction: column;
+    width: 92%;
+    gap: 22px;
+    padding: 28px 22px;
+    border-radius: 25px;
+    align-items: flex-start;
+  }
+
+  .stat-item {
+    gap: 14px;
+    width: 100%;
+  }
 
   .stat-icon-box {
-    width: 50px;
-    height: 50px;
-    border-radius: 15px;
+    width: 52px;
+    height: 52px;
+    border-radius: 14px;
   }
 
   .stat-icon-box img {
     width: 28px;
   }
-}
-
-/* =========================================================
-   SMALL MOBILE (max-width: 480px)
-========================================================= */
-@media (max-width: 480px) {
-  .stats-container {
-    width: 92%;
-    padding: 22px 18px;
-    gap: 18px;
-  }
-
-  .stat-item {
-    gap: 14px;
-  }
-
-  .stat-icon-box {
-    width: 46px;
-    height: 46px;
-    border-radius: 14px;
-  }
-
-  .stat-icon-box img {
-    width: 26px;
-  }
 
   .stat-content h2 {
-    font-size: 22px;
+    font-size: 24px;
   }
 
   .stat-content p {
@@ -169,3 +133,35 @@
   }
 }
 
+/* =======================================================
+   SMALL MOBILE (max-width: 480px)
+======================================================= */
+@media (max-width: 480px) {
+  .stats-container {
+    width: 94%;
+    padding: 22px 16px;
+    gap: 18px;
+  }
+
+  .stat-item {
+    gap: 12px;
+  }
+
+  .stat-icon-box {
+    width: 46px;
+    height: 46px;
+    border-radius: 12px;
+  }
+
+  .stat-icon-box img {
+    width: 24px;
+  }
+
+  .stat-content h2 {
+    font-size: 20px;
+  }
+
+  .stat-content p {
+    font-size: 12px;
+  }
+}
