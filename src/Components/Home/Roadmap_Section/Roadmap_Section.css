@@ -2,11 +2,10 @@
   width: 100%;
   display: flex;
   justify-content: center;
-  gap: 70px;
+  gap: 10px;
   align-items: center;
-  /* padding: 10px 0 ; */
   font-family: "Inter", sans-serif;
-  transform: translateY(65px);
+  transform: translateY(85px);
 }
 
 /* LEFT IMAGE SETUP */
@@ -34,7 +33,7 @@
 }
 
 .brush-underlineone {
-  width: 240px;
+  width: 280px;
   margin: 5px 0 25px;
 }
 
@@ -46,7 +45,7 @@
 }
 
 .step-card {
-  background: #ffffff;
+  background: #aaa8a81a;
   padding: 18px 20px;
   border-radius: 16px;
   display: flex;
@@ -76,28 +75,50 @@
 .step-card p {
   font-size: 14px;
   color: #555;
-  margin-top: 2px;
+  margin-top: 1px;
 }
 
 /* STATUS TAGS */
 .tag {
-  padding: 6px 18px;
-  border-radius: 20px;
+  padding: 6px 0px;
+  width: 80px;
+  text-align: center;
+  border-radius: 25px;
   font-size: 12px;
   font-weight: 700;
   color: #fff;
+  white-space: nowrap;         
+  box-shadow: 0 3px 10px rgba(0,0,0,0.12);
+
 }
 
+.tag.olive{
+  width: 100px;
+}
+
+
 .green {
-  background: #5dbb48;
+   background: linear-gradient(
+    180deg,
+    rgba(7, 104, 7, 1) 0%,
+    rgba(117, 150, 2, 1) 100% 
+   );
 }
 
 .dark-green {
-  background: #4a7f38;
+  background: linear-gradient(
+    180deg,
+    rgba(7, 104, 7, 1) 0%,
+    rgba(117, 150, 2, 1) 100% 
+   );
 }
 
 .olive {
-  background: #98a94b;
+  background: linear-gradient(
+    180deg,
+    rgba(7, 104, 7, 1) 0%,
+    rgba(117, 150, 2, 1) 100% 
+   );
 }
 
 /* ========================================================= */

@@ -9,19 +9,17 @@ import Icon1 from "../../../Assets/Home/Roadmap_Section/1.png";
 import Icon2 from "../../../Assets/Home/Roadmap_Section/2.png";
 import Icon3 from "../../../Assets/Home/Roadmap_Section/3.png";
 
-// Brush underline
+
 import Brush from "../../../Assets/Home/Roadmap_Section/Tag.png";
 
-// Yellow circle frame
-// import CircleFrame from "../../../Assets/Home/Roadmap_Section/Circlebrush.png";
+
 
 export default function Roadmap() {
   return (
     <div className="roadmap-wrapper">
 
-      {/* LEFT IMAGE WITH YELLOW BRUSH FRAME */}
+    
       <div className="left-image-box">
-        {/* <img src={CircleFrame} className="circle-frame" alt="" /> */}
         <img src={LeftImage} className="main-image" alt="" />
       </div>
 

@@ -5,26 +5,32 @@
 
 /* BADGE */
 .top-badge {
+  background: #ffffff;
+  color: #000;
+  padding: 10px 26px;
+  border-radius: 30px;
   display: inline-flex;
   align-items: center;
-  gap: 8px;
-  background: #ffffff;
-  border-radius: 20px;
-  padding: 6px 15px;
-  font-size: 13px;
-  border: 1px solid #ddd;
+  gap: 10px;
+  font-size: 15px;
+  
+  margin-bottom: 20px;
+  box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.075);
 }
 
+
 .top-badge img {
-  width: 14px;
+  width: 20px;
 }
 
 /* TITLE */
 .section-title {
-  font-size: 32px;
-  margin-top: 25px;
-  color: rgba(117, 150, 2, 1);
+   margin-top: 5px;
+  margin-bottom: 5px;
+  font-size: 28px;
   font-weight: 700;
+  color: #3a860d;
+ 
 }
 
 /* ===================== UNDERLINE ===================== */

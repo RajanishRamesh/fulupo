@@ -13,6 +13,7 @@ import Roadmap from "../Home/Roadmap_Section/Roadmap_Section";
 import VisionSection from "../Home/Vision_Section/Vision_Section";
 import RevolutionSection from "../Home/Revolution_Section/Revolution_Section";
 
+
 const HomePage = () => {
   return (
     <>
@@ -34,6 +35,7 @@ const HomePage = () => {
       <section id="future"><Roadmap /></section>
       <section id="future"><VisionSection /></section>
       <section id="future"><RevolutionSection /></section>
+      
     </>
   );
 };

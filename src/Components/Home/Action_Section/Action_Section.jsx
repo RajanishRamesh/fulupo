@@ -1,6 +1,8 @@
 import React from "react";
 import "./Action_Section.css";
 import store from "../../../Assets/Home/Action_Section/store.jpg";
+import DemoIcon from "../../../Assets/Home/Action_Section/star.png";
+
 
 // ICON IMPORTS
 import VoiceIcon from "../../../Assets/Home/Action_Section/1.png";
@@ -13,7 +15,11 @@ export default function Action_Section() {
     <section id="demo" className="see-section">
    
       {/* TOP SMALL BUTTON */}
-      <div className="demo-btn">Live Demo</div>
+     <div className="demo-btn">
+     <img src={DemoIcon} alt="icon" className="demo-btn-icon" />
+     Live Demo
+     </div>
+
 
       {/* TITLE */}
       <h2 className="see-title">See Fulupo in Action</h2>

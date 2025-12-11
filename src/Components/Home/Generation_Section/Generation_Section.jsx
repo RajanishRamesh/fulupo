@@ -40,7 +40,7 @@ export default function Generation_Section() {
 
         {/* LEFT SIDE */}
         <div className="left-box">
-          <div className="eco-tag">⚡ Complete AI Ecosystem</div>
+          <div className="eco-tag"> <img src={SparkleIcon} alt="sparkle" className="sparkle-icon" /> Complete AI Ecosystem</div>
 
           <h3 className="producer-title">PRODUCER Tech</h3>
           <p className="producer-sub">The Future of Unmanned Stores</p>
