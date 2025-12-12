@@ -9,8 +9,10 @@
   width: 100%;
   background-size: cover;
   background-position: center;
-  padding: 80px 40px 130px;
+  
   position: relative;
+  padding: 80px 40px 80px;
+
 }
 
 /* OVERLAY */
@@ -77,6 +79,19 @@
   line-height: 1.65;
   color: #e5e5e5;
 }
+
+
+.pill1 span,
+.pill span {
+  cursor: pointer;         /* pointer cursor */
+  transition: 0.2s ease-in-out;
+}
+
+.pill1 span:hover,
+.pill span:hover {
+  color: #5A7D19;          /* green color on hover */
+}
+
 
 /* ============================= */
 /* DESKTOP DEFAULT (≥ 1024px)    */

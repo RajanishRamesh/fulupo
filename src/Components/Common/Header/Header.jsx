@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { NavLink } from "react-router-dom";
 import "./Header.css";
-import Logo from "../../../Assets/Home/HeroSection/Logo.png";
+import Logo from "../../../Assets/Logo/Logo.png";
 
 const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -31,7 +31,7 @@ const Header = () => {
 
     // run once on refresh
     setTimeout(() => handleScroll(), 150);
-
+ 
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 

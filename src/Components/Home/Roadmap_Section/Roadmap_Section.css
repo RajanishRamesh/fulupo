@@ -1,12 +1,13 @@
 .roadmap-wrapper {
-  width: 100%;
   display: flex;
   justify-content: center;
   gap: 10px;
   align-items: center;
   font-family: "Inter", sans-serif;
-  transform: translateY(85px);
+  transform: translateY(45px);
+  margin-bottom: -50px; 
 }
+
 
 /* LEFT IMAGE SETUP */
 .left-image-box {
@@ -23,7 +24,13 @@
 .right-content {
   width: 480px;
   text-align: left;
+}
+.roadmap-title,.brush-underlineone{
+  transform: translateY(-15px);
+}
 
+.brush-underlineone{
+  transform: translateY(-30px);
 }
 
 .roadmap-title {

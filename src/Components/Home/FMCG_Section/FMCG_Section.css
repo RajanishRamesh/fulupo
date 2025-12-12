@@ -1,221 +1,144 @@
+/* WRAPPER */
 .fmcg-wrapper {
-  width: 100%;
   text-align: center;
-  padding: 20px 0;
+  padding: 100px 0;
   font-family: "Inter", sans-serif;
-  padding-bottom: 20px;
 }
 
+/* TITLE */
 .main-title {
-  font-size: 28px;
+  font-size: 30px;
   font-weight: 700;
-  color: #5b7e16;
-  padding: 80px;
-
+  color: #5A7D19;
+  margin-bottom: 6px;
 }
 
+.main-title,.underline-green{
+  transform: translateY(-65px);
+}
+
+/* Default */
+.single-card {
+  text-align: center;
+  transition: 0.3s ease-in-out;
+}
+
+/* Card 1 movement */
+.move-1 {
+  transform: translateY(-25px);
+}
+
+/* Card 2 movement */
+.move-2 {
+  transform: translateY(35px);
+}
+
+/* Card 3 movement */
+.move-3 {
+  transform: translateY(-25px);
+}
+
+/* Card 4 movement */
+.move-4 {
+  transform: translateY(35px);
+}
+
+
+
+/* GREEN BRUSH LINE */
 .underline-green {
-  width: 390px;
-  height: 15px;
+  width: 330px;
+  height: 16px;
   background: url("../../../Assets/Home/FMCG_Section/Greenline.png") no-repeat center;
   background-size: contain;
-
-
-  margin: -65px auto 25px;
-
-  display: block;
+  margin: 0 auto 45px;
 }
 
-.cards-row {
+/* CARD GRID */
+.cards-container {
   display: flex;
   justify-content: center;
-  gap: 45px;
+  align-items: center;
+  gap: 55px;
   flex-wrap: wrap;
 }
 
-.card-box {
-  text-align: center;
-}
-
-.img-wrapper {
-  width: 170px;
-  height: 170px;
-  position: relative;
-  overflow: hidden;
+/* IMAGE (clean version) */
+.simple-card-img {
+  width: 260px;
+  /* height: 165px; */
   border-radius: 22px;
-  transform: rotate(45deg);
-}
-
-.img-wrapper img {
-  width: 100%;
-  height: 100%;
   object-fit: cover;
-  transform: rotate(-45deg);
 }
 
-
-
-.card-title {
-  font-size: 16px;
-  font-weight: 600;
+/* TEXT */
+.card-text {
+  margin-top: 15px;
+  font-size: 20px;
+  font-weight: 650;
   color: #555;
-  margin-top: 20px;
 }
+
+
+
+
+
+
+
+/* -------------------- Responsive -------------------- */
 
 @media (max-width: 1024px) {
-  .underline-img {
-    width: 480px;
-    height: 12px;
-    padding-bottom: 35px !important;
-    background-size: contain;
-  }
-
   .main-title {
-    font-size: 26px;
-    padding: 60px 0;
+    font-size: 28px;
+  }
+  .cards-container {
+    gap: 40px;
   }
 }
 
 @media (max-width: 768px) {
-  .underline {
-    width: 200px;
-    height: 10px;
-    transform: translateY(-10px) !important;
-    margin: 0 auto 12px;
-    background-size: contain;
-  }
-
   .main-title {
-    font-size: 22px;
-    padding: 40px 0;
+    font-size: 24px;
   }
-}
-
-@media (max-width: 480px) {
-  .underline {
+  .underline-green {
+    width: 260px;
+  }
+  .simple-card-img {
     width: 150px;
-    height: 8px;
-    transform: translateY(-8px) !important;
-    margin: 0 auto 10px;
-  }
-
-  .main-title {
-    font-size: 20px;
-    padding: 30px 0;
-  }
-}
-
-/* ===========================================
-   GLOBAL TITLE + BRUSH SPACING FIX
-   (Professional Alignment on All Screens)
-=========================================== */
-
-.section-title,
-.main-title,
-.roadmap-title,
-.nextgen-title {
-  margin-bottom: 6px;
-  /* reduce space before brush */
-}
-
-.brush-underline,
-.underline,
-.underline-img {
-  margin-top: 2px;
-  margin-bottom: 12px;
-  /* reduce brush-to-content gap */
-  transform: translateY(-66px) !important;
-  /* perfect tight alignment */
-}
-
-@media (max-width: 1280px) {
-
-  .section-title,
-  .main-title,
-  .roadmap-title,
-  .nextgen-title {
-    margin-bottom: 4px;
-  }
-
-  .brush-underline,
-  .underline,
-  .underline-img {
-    margin-bottom: 10px;
-    transform: translateY(-5px) !important;
-  }
-}
-
-@media (max-width: 992px) {
-
-  .brush-underline,
-  .underline,
-  .underline-img {
-    width: 70%;
-    margin-bottom: 8px;
-    transform: translateY(-4px) !important;
-  }
-}
-
-@media (max-width: 768px) {
-
-  .brush-underline,
-  .underline,
-  .underline-img{
-    width: 60%;
-    margin-bottom: 5px !important;
-   
-    transform: translateX(-4px)
-  }
-
-  .section-title,
-  .main-title,
-  .roadmap-title,
-  .nextgen-title {
-    font-size: 22px;
-    margin-bottom: 45px;
-  }
-}
-
-@media (max-width: 480px) {
-
-  .brush-underline,
-  .underline,
-  .underline-img {
-    width: 50%;
-    margin-bottom: 5px;
-    transform: translateY(-2px) !important;
-  }
-
-  .section-title,
-  .main-title,
-  .roadmap-title,
-  .nextgen-title {
-    margin-bottom: 1px;
+    height: 150px;
   }
 }
 
 @media (max-width: 480px) {
   .main-title {
-    white-space: nowrap;
     font-size: 20px;
-    padding: 20px 0;
   }
-
-  .underline-green {
-    width: 250px;
-    margin: -10px auto 18px;
-  }
-}
-
-@media (max-width: 320px) {
-  .main-title {
-    white-space: nowrap;
-    font-size: 17px;
-    padding: 20px 0;
-  }
-
   .underline-green {
     width: 200px;
-    margin: -10px auto 18px;
+  }
+  .simple-card-img {
+    width: 130px;
+    height: 130px;
+  }
+  .card-text {
+    font-size: 14px;
+  }
+}
+
+/* -------------------- Tablet: 600px to 778px -------------------- */
+@media (min-width: 600px) and (max-width: 778px) {
+  .cards-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 cards per row */
+    gap: 40px;
+    justify-items: center;
+  }
+
+  .simple-card-img {
+    width: 200px;   /* slightly smaller for tablet */
+  }
+
+  .card-text {
+    font-size: 18px;
   }
 }

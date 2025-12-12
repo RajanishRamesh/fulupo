@@ -8,40 +8,36 @@ import img4 from "../../../Assets/Home/FMCG_Section/4.png";
 
 export default function FMCG_Section() {
   const cards = [
-    { id: "01", title: "", img: img1 },
-    { id: "02", title: "", img: img2 },
-    { id: "03", title: "", img: img3 },
-    { id: "04", title: "", img: img4 }
+    { title: "AI Quality Detection", img: img1 },
+    { title: "Smart Inventory", img: img2 },
+    { title: "Waste Reduction", img: img3 },
+    { title: "Digital Integration", img: img4 }
   ];
-
-  // 👉 Extract only numbers: ["01", "02", "03", "04"]
-//   const numbers = cards.map((card) => card.id);
 
   return (
     <div className="fmcg-wrapper">
-        <center>
-      <h2  className="main-title" >Fresh Produce & FMCG Management</h2></center>
+      <h2 className="main-title">Fresh Produce & FMCG Management</h2>
       <div className="underline-green"></div>
 
-      <div className="cards-row">
+      <div className="cards-container">
+  {cards.map((card, i) => (
+    <div
+      className={`single-card 
+        ${i === 0 ? "move-1" : ""} 
+        ${i === 1 ? "move-2" : ""} 
+        ${i === 2 ? "move-3" : ""} 
+        ${i === 3 ? "move-4" : ""}
+      `}
+      key={i}
+    >
+      <img src={card.img} alt={card.title} className="simple-card-img" />
+      <p className="card-text">{card.title}</p>
+    </div>
+  ))}
+</div>
 
-        {cards.map((card, index) => (
-          <div className="card-box" key={card.id}>
-            
-            {/* 👉 Using extracted number here */}
-            {/* <div className="num-badge">{numbers[index]}</div> */}
-
-            <img 
-              src={card.img} 
-              alt={card.title} 
-              className="simple-img"
-            />
-
-            <p className="card-title">{card.title}</p>
-          </div>
-        ))}
-
-      </div>
+        
+      
     </div>
   );
 }
