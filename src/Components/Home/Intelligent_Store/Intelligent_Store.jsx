@@ -1,79 +1,76 @@
 import React from "react";
 import "./Intelligent_Store.css";
 
-import centerImage from "../../../Assets/Home/Intelligent_Store/Center.png";
-import brush from "../../../Assets/Home/Intelligent_Store/Brush.png";
+import centerFood from "../../../Assets/Home/Intelligent_Store/center.png";
 import veg from "../../../Assets/Home/Intelligent_Store/Veg.png";
 import veg_R from "../../../Assets/Home/Intelligent_Store/Veg_L.png";
-import voice from "../../../Assets/Home/Intelligent_Store/Voice.png"
-import loss from "../../../Assets/Home/Intelligent_Store/Group 31.png"
-import damage from "../../../Assets/Home/Intelligent_Store/brain 1.png"
-import image from "../../../Assets/Home/Intelligent_Store/Group 26.png"
-import waste from "../../../Assets/Home/Intelligent_Store/Vector (4).png"
-import brain from '../../../Assets/Home/Intelligent_Store/brain 1.png'
 
+import voice from "../../../Assets/Home/Intelligent_Store/Voice.png";
+import loss from "../../../Assets/Home/Intelligent_Store/Group 31.png";
+import damage from "../../../Assets/Home/Intelligent_Store/brain 1.png";
+import image from "../../../Assets/Home/Intelligent_Store/Group 26.png";
+import waste from "../../../Assets/Home/Intelligent_Store/Vector (4).png";
+import brain from "../../../Assets/Home/Intelligent_Store/brain 1.png";
+import food from "../../../Assets/Home/Intelligent_Store/food.png";
 
 export default function Intelligent_Store() {
   return (
-    <section id="features" className="is-wrapper">
+    <section className="is-wrapper">
 
-      {/* Decorative Right Image */}
-      <img src={veg_R} alt="" className="veg-left" />
-      <img src={veg} alt="" className="veg-right" />
 
+      {/* Decorative veg */}
+      <img src={veg_R} className="veg-left" alt="" />
+      <img src={veg} className="veg-right" alt="" />
+
+      {/* TEXT CONTENT */}
       <div className="is-content">
         <h2 className="is-title">Intelligent Store Operations</h2>
-        <img src={brush} alt="" className="is-brush" />
+        <div className="is-underline"></div>
 
         <p className="is-subtext">
           Cutting-edge AI technologies designed specifically for retail operations.
           From voice commands to predictive analytics, every feature is built to
           save time and increase profits.
         </p>
-
-        <div className="is-center-container">
-          <img src={centerImage} alt="" className="is-center-img" />
-        </div>
       </div>
-      {/* MOBILE FEATURE LIST */}
+
+      {/* ✅ CENTER VISUAL (FULL-WIDTH CENTERED) */}
+      <div className="is-center-visual">
+        <img src={food} className="food" alt="food" />
+      </div>
+
+
+      {/* MOBILE FEATURES */}
       <div className="is-feature-list">
-        <div className="is-feature">
-          <img src={voice} className="voice" alt="" />
-          <h3>Voice AI Technology</h3>
-          <p>Revolutionary voice recognition for purchases and sales using NLP.</p>
-        </div>
+        <Feature icon={voice} title="Voice AI Technology"
+          text="Voice recognition for purchase and sales using NLP." />
 
-        <div className="is-feature">
-          <img src={image} className="image" alt="" />
-          <h3>Image Recognition</h3>
-          <p>AI-based inventory identification and quality tracking.</p>
-        </div>
+        <Feature icon={image} title="Image Recognition"
+          text="Computer vision for inventory & quality tracking." />
 
-        <div className="is-feature">
-          <img src={damage} className="damage" alt="" />
-          <h3>Damage Prevention</h3>
-          <p>Predictive analytics to prevent FMCG product damage.</p>
-        </div>
+        <Feature icon={damage} title="Damage Prevention"
+          text="Predictive analytics to avoid FMCG losses." />
 
-        <div className="is-feature">
-          <img src={waste} className="waste" alt="" />
-          <h3>Smart Waste Management</h3>
-          <p>AI reduction of perishable waste like fruits & vegetables.</p>
-        </div>
+        <Feature icon={waste} title="Smart Waste Management"
+          text="AI powered waste reduction for perishables." />
 
-        <div className="is-feature">
-          <img src={loss} className="loss" alt="" />
-          <h3>Loss-Free Suggestions</h3>
-          <p>AI purchase recommendations based on trends.</p>
-        </div>
+        <Feature icon={loss} title="Loss-Free Suggestions"
+          text="Trend based AI purchase recommendations." />
 
-        <div className="is-feature">
-          <img src={brain} className="brain" alt="" />
-          <h3>Subscription Intelligence</h3>
-          <p>AI suggestions for weekly/monthly consumer subscriptions.</p>
-        </div>
+        <Feature icon={brain} title="Subscription Intelligence"
+          text="Automated weekly & monthly subscriptions." />
       </div>
 
     </section>
+  );
+}
+
+function Feature({ icon, title, text }) {
+  return (
+    <div className="is-feature">
+      <img src={icon} alt="" />
+      <h3>{title}</h3>
+      <p>{text}</p>
+    </div>
   );
 }

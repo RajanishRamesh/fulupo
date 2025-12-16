@@ -67,12 +67,12 @@
 }
 
 .brush-line {
-  width: 380px;
-  height: 10px;
-  background: url("../../../Assets/Home/Action_Section/Greenline.png") center center no-repeat;
-  background-size: contain;
-  background-position: center;
-  margin: 8px auto 20px;
+  width: clamp(200px, 35vw, 400px);   /* 👈 PC max = 400px */
+  height: clamp(6px, 1.5vw, 12px);
+  margin: 0 auto 50px;
+  background: url("../../../Assets/Home/Action_Section/Greenline.png")
+              no-repeat center / contain;
+  transform: translateY(-20px);
 }
 
 /* ============================================================
@@ -80,10 +80,10 @@
 ============================================================ */
 .see-subtext {
   max-width: 700px;
-  margin: 0 auto 50px;
+  margin: 0 auto 40px;
   font-size: 16px;
-  line-height: 1.6;
   color: #555;
+  margin-top: -50px;
 }
 
 /* ============================================================

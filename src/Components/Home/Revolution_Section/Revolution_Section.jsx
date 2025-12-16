@@ -11,7 +11,7 @@ export default function RevolutionSection() {
       className="revolution-wrapper"
       style={{ backgroundImage: `url(${BgImage})` }}
     >
-      <div className="overlay"></div>
+      <div className="overlay-bg"></div>
 
       <div className="revolution-content">
 
@@ -23,11 +23,9 @@ export default function RevolutionSection() {
 
         {/* TITLE */}
         <h2 className="revolution-title">Ready for AI Revolution?</h2>
-
-        {/* YELLOW UNDERLINE BRUSH */}
         <img src={Brush} alt="underline" className="revolution-underline" />
 
-        {/* SUBTEXT */}
+        {/* DESCRIPTION */}
         <p className="revolution-desc">
           Join thousands of retailers already using Fulupo to revolutionize
           their operations. Experience the power of Voice AI, Image Recognition,

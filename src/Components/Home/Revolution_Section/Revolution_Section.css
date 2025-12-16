@@ -1,40 +1,57 @@
+/* ===================================================== */
+/* WRAPPER                                               */
+/* ===================================================== */
 .revolution-wrapper {
   width: 100%;
+  position: relative;
+  margin-top: -150px;
+  padding: 180px 0 120px;
   background-size: cover;
   background-position: center;
-  position: relative;
-  padding-top: 200px;
-  padding-bottom: 50px;
+  font-family: "Inter", sans-serif;
 }
 
-.overlay {
+
+.revolution-wrapper {
+  padding: 180px 0 120px;
+ 
+}
+
+
+
+/* OVERLAY */
+.overlay-bg {
   position: absolute;
   inset: 0;
-  background: rgba(0, 40, 0, 0.82);
+  background: rgba(33, 31, 45, 0.92);
   z-index: 1;
 }
 
+/* CONTENT */
 .revolution-content {
   position: relative;
   z-index: 5;
   text-align: center;
-  color: #fff;
-  width: 80%;
-  margin: auto;
+  color: #ffffff;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 20px;
 }
 
-/* TOP PILL */
+/* ===================================================== */
+/* TOP PILL                                              */
+/* ===================================================== */
 .revolution-pill {
   display: inline-flex;
   align-items: center;
-  gap: 7px;
-  background: #fff;
+  gap: 8px;
+  background: #ffffff;
   color: #111;
   padding: 8px 18px;
-  border-radius: 22px;
+  border-radius: 24px;
   font-size: 13px;
   font-weight: 500;
-  margin-bottom: 20px;
+  margin-bottom: 22px;
   box-shadow: 0 3px 10px rgba(0,0,0,0.15);
 }
 
@@ -43,45 +60,54 @@
   height: 16px;
 }
 
-/* TITLE */
+/* ===================================================== */
+/* TITLE (DOMINANT)                                      */
+/* ===================================================== */
 .revolution-title {
-  font-size: 32px;
+  font-size: clamp(22px, 3.5vw, 34px);
   font-weight: 800;
-  margin-bottom: 5px;
   color: #ffdf40;
+  margin: 0;
 }
 
-/* BRUSH */
+/* UNDERLINE */
 .revolution-underline {
-  width: 180px;
-  margin-bottom: 25px;
+  width: clamp(95px, 18vw, 180px);
+  margin: 10px auto 26px;
+  display: block;
 }
 
-/* DESCRIPTION */
+/* ===================================================== */
+/* DESCRIPTION (SMALLER THAN TITLE)                      */
+/* ===================================================== */
 .revolution-desc {
-  font-size: 16px;
-  width: 80%;
-  margin: 0 auto 35px;
+  font-size: clamp(14px, 1.6vw, 16px);
   line-height: 1.6;
+  color: #e6e6e6;
+  max-width: 720px;
+  margin: 0 auto 36px;
 }
 
-/* BUTTONS */
+/* ===================================================== */
+/* BUTTONS                                               */
+/* ===================================================== */
 .revolution-buttons {
   display: flex;
   justify-content: center;
   gap: 18px;
+  flex-wrap: wrap;
 }
 
 .btn-green {
-  padding: 12px 28px;
+  padding: 12px 30px;
   background: #1cb640;
   color: #fff;
-  border-radius: 25px;
+  border-radius: 28px;
   border: none;
   font-size: 15px;
   font-weight: 600;
   cursor: pointer;
-  transition: 0.2s ease-in-out;
+  transition: 0.2s ease;
 }
 
 .btn-green:hover {
@@ -89,31 +115,28 @@
 }
 
 .btn-outline {
-  padding: 12px 28px;
-  border-radius: 25px;
-  border: 2px solid #fff;
+  padding: 12px 30px;
+  border-radius: 28px;
+  border: 2px solid #ffffff;
   background: transparent;
-  color: #fff;
+  color: #ffffff;
   font-size: 15px;
   font-weight: 600;
   cursor: pointer;
-  transition: 0.2s;
+  transition: 0.2s ease;
 }
 
 .btn-outline:hover {
-  background: #fff;
+  background: #ffffff;
   color: #000;
 }
 
-@media (max-width: 1024px){
-  .revolution-desc{
-    width: 100%;
-  }
-}
-
-@media (max-width:768px){
-  .revolution-buttons{
-    display: flex;
+/* ===================================================== */
+/* RESPONSIVE                                            */
+/* ===================================================== */
+@media (max-width: 768px) {
+  .revolution-buttons {
     flex-direction: column;
+    gap: 14px;
   }
 }

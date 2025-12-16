@@ -50,7 +50,7 @@
   position: absolute;
   width: 0%;
   height: 2px;
-  background: #7CA12E;
+  background: rgba(24, 24, 71, 1);
   left: 0;
   bottom: 0;
   transition: 0.3s;
@@ -79,7 +79,7 @@
 }
 
 .pro-btn-store:hover {
-  background: #EAF6D3;
+  background: #d4f19e;
 }
 
 .pro-btn-consumer {
@@ -179,7 +179,7 @@
 /* ACTIVE UNDERLINE */
 .pro-link.active::after {
   width: 100%;
-  background: #7CA12E;
+  background:rgba(24, 24, 71, 1);
 }
 /* =======================================================
    LAPTOP VIEW FIX (Perfect professional UI)

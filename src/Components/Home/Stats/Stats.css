@@ -15,7 +15,7 @@
 ======================================================= */
 .stats-container {
   width: 80%;
-  background: rgba(117, 150, 2, 1);
+  background: rgba(35, 82, 142, 1);
   padding: 35px 45px;
   border-radius: 35px;
   display: flex;
@@ -138,7 +138,7 @@
 
   .stat-content h2 {
     font-size: 24px;
-    
+
   }
 
   .stat-content p {
@@ -155,7 +155,7 @@
     width: 94%;
     padding: 20px 16px;
     gap: 18px;
-    
+
   }
 
   .stat-item {
@@ -176,7 +176,7 @@
 
   .stat-content h2 {
     font-size: 20px;
-    
+
   }
 
   .stat-content p {

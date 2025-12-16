@@ -1,28 +1,37 @@
-.why-section {
-  padding: 60px 20px;
+/* ============================= */
+/* WRAPPER                       */
+/* ============================= */
+.why-wrapper {
+  padding: 60px 20px 60px;
   text-align: center;
   background: #ffffff;
-  margin-bottom: 25px;
-  padding-top: 25px;
+  font-family: "Inter", sans-serif;
 }
 
-/* TITLE */
+/* ============================= */
+/* TITLE                         */
+/* ============================= */
 .why-title {
-  font-size: 32px;
+  font-size: 32px;              /* Desktop */
   font-weight: 700;
   color: #6fa11c;
-  margin-bottom: 10px;
+  margin-bottom: 6px;
 }
 
-/* BRUSH LINE */
-.brush {
-  width: 180px;
-  height: 8px;
-  background: url('../../../Assets/Home/WhyFulupo/GreenBrush.png') no-repeat center/contain;
+/* ============================= */
+/* UNDERLINE (TITLE KEELA)       */
+/* ============================= */
+.why-underline {
+  width: 240px;
+  height: 12px;
   margin: 0 auto 50px;
+  background: url("../../../Assets/Home/WhyFulupo/GreenBrush.png")
+              no-repeat center / contain;
 }
 
-/* GRID */
+/* ============================= */
+/* GRID                          */
+/* ============================= */
 .why-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -31,30 +40,47 @@
   margin: 0 auto;
 }
 
-/* CARD */
+/* ============================= */
+/* CARD                          */
+/* ============================= */
 .why-card {
   text-align: center;
   padding: 0 10px;
 }
 
-/* ICON CIRCLE */
+/* ============================= */
+/* ICON – EXACT LIKE IMAGE       */
+/* ============================= */
 .icon-circle {
   width: 130px;
   height: 130px;
   border-radius: 50%;
-  background: #fff7e8;
+  background: #fff6e5; /* 🔥 light cream yellow */
   display: flex;
   align-items: center;
   justify-content: center;
   margin: 0 auto 20px;
 }
 
+/* ICON COLOR (ORANGE/RED) */
 .icon-circle img {
-  width: 68px;
-  height: 68px;
+  width: 64px;
+  height: 64px;
+  object-fit: contain;
+
+  /* 🔥 PNG recolor to match reference */
+  filter: 
+    invert(32%) 
+    sepia(94%) 
+    saturate(7492%) 
+    hue-rotate(3deg) 
+    brightness(102%) 
+    contrast(104%);
 }
 
-/* HEADINGS & CONTENT */
+/* ============================= */
+/* CARD TITLE                    */
+/* ============================= */
 .why-card h3 {
   font-size: 20px;
   font-weight: 700;
@@ -62,24 +88,85 @@
   color: #333;
 }
 
+/* ============================= */
+/* CARD TEXT                     */
+/* ============================= */
 .why-card p {
-  color: #666;
   font-size: 15px;
   line-height: 1.5;
+  color: #666;
   max-width: 260px;
   margin: 0 auto;
 }
 
-/* RESPONSIVE */
-@media (max-width: 900px) {
+/* ================================================= */
+/* RESPONSIVE – SAME SCALE AS YOUR OTHER SECTIONS    */
+/* ================================================= */
+
+/* Tablet */
+@media (max-width: 1024px) {
+  .why-title {
+    font-size: 28px;
+  }
+
+  .why-underline {
+    width: 220px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .why-title {
+    font-size: 24px;
+  }
+
+  .why-underline {
+    width: 180px;
+    margin-bottom: 40px;
+  }
+
   .why-grid {
     grid-template-columns: 1fr;
     gap: 50px;
+  }
+}
+
+/* Small Mobile */
+@media (max-width: 480px) {
+  .why-title {
+    font-size: 20px;
+  }
+
+  .why-underline {
+    width: 150px;
   }
 
   .icon-circle {
     width: 120px;
     height: 120px;
   }
+
+  .icon-circle img {
+    width: 58px;
+    height: 58px;
+  }
+
+  .why-card h3 {
+    font-size: 18px;
+  }
+
+  .why-card p {
+    font-size: 14px;
+  }
 }
 
+/* Extra Small */
+@media (max-width: 360px) {
+  .why-title {
+    font-size: 18px;
+  }
+
+  .why-underline {
+    width: 130px;
+  }
+}

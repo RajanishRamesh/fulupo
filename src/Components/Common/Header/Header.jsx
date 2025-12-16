@@ -15,7 +15,7 @@ const Header = () => {
       let current = "home"; // default
 
       sections.forEach((sec) => {
-        const top = sec.offsetTop - 200; 
+        const top = sec.offsetTop - 200;
         const height = sec.offsetHeight;
         const id = sec.id;
 
@@ -31,7 +31,7 @@ const Header = () => {
 
     // run once on refresh
     setTimeout(() => handleScroll(), 150);
- 
+
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 

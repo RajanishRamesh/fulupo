@@ -8,7 +8,7 @@ import man from "../../../Assets/Icons/3.png";
 import automation from "../../../Assets/Icons/4.png";
 
 import HeroBG from "../../../Assets/Home/HeroSection/Hero.jpg";
-import HeroVeg from "../../../Assets/Home/HeroSection/Vegetables.png";
+import HeroVeg from "../../../Assets/Home/HeroSection/Vegetable.png";
 import PlayCircle from "../../../Assets/Icons/play_circle.ico";
 import { MdAutoAwesome } from "react-icons/md";
 

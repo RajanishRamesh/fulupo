@@ -5,6 +5,8 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Header from "./Components/Common/Header/Header.jsx";
 
 import Footer from "./Components/Common/Footer/Footer.jsx";
+import "./Components/Global.css/Global.css";
+
 
 // HOME PAGE
 import HomePage from "../src/Components/Pages/Home.jsx";

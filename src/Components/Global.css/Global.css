@@ -1,0 +1,62 @@
+/* ============================= */
+/* GLOBAL TYPOGRAPHY SYSTEM      */
+/* ============================= */
+
+:root {
+  /* -------- TITLES -------- */
+  --title-lg: clamp(24px, 4vw, 32px);     /* Section titles */
+  --title-md: clamp(20px, 3vw, 26px);     /* Card titles */
+  --title-sm: clamp(18px, 2.5vw, 22px);   /* Sub headings */
+
+  /* -------- TEXT -------- */
+  --text-lg: clamp(15px, 2.2vw, 18px);    /* Section subtitle */
+  --text-md: clamp(13px, 2vw, 15px);      /* Paragraph */
+  --text-sm: clamp(12px, 1.8vw, 14px);    /* List / meta */
+
+  /* -------- BUTTON -------- */
+  --btn-text: clamp(13px, 2vw, 15px);
+
+  /* -------- COLORS -------- */
+  --text-dark: #333;
+  --text-muted: #444;
+  --text-light: #666;
+}
+
+/* ============================= */
+/* GLOBAL CLASSES (REUSABLE)     */
+/* ============================= */
+
+.section-title {
+  font-size: var(--title-lg);
+  font-weight: 700;
+  color: #454545;
+  margin: 6px 0;
+}
+
+.section-subtitle {
+  font-size: var(--text-lg);
+  color: var(--text-muted);
+  line-height: 1.6;
+}
+
+.card-title {
+  font-size: var(--title-md);
+  font-weight: 700;
+  color: #222;
+}
+
+.card-text {
+  font-size: var(--text-md);
+  color: var(--text-dark);
+  line-height: 1.5;
+}
+
+.list-text {
+  font-size: var(--text-sm);
+  color: #111;
+}
+
+.btn-text {
+  font-size: var(--btn-text);
+  font-weight: 600;
+}

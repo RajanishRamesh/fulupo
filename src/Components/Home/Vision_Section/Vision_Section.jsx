@@ -3,27 +3,27 @@ import "./Vision_Section.css";
 
 import QuoteLeft from "../../../Assets/Home/Vision_Section/Quote_L.png";
 import QuoteRight from "../../../Assets/Home/Vision_Section/Quote_R.png";
-// import YellowArc from "../../../Assets/Home/Vision_Section/Ellipse.png";
 import Brush from "../../../Assets/Home/Vision_Section/Brush.png";
 import Food from "../../../Assets/Home/Vision_Section/Food.png";
-
-
 
 export default function Vision_Section() {
   return (
     <section className="vision-wrapper">
       <div className="vision-card">
 
-        {/* LEFT QUOTES */}
+        {/* LEFT QUOTE */}
         {/* <img src={QuoteLeft} alt="quote" className="quote-left" /> */}
 
         <div className="vision-content">
-          <h2 className="vision-title">
-            Our Vision
-            
-            <div className="vision-underline" style={{ backgroundImage: `url(${Brush})` }}></div>
 
-          </h2>
+          {/* 🔥 TITLE + BRUSH */}
+          <div className="vision-title-row">
+            <h2 className="vision-title">Our Vision</h2>
+            <div
+              className="vision-underline"
+              style={{ backgroundImage: `url(${Brush})` }}
+            ></div>
+          </div>
 
           <p className="vision-text">
             Providing services to more than <br />
@@ -35,14 +35,13 @@ export default function Vision_Section() {
           </p>
         </div>
 
-        {/* RIGHT QUOTES */}
+        {/* RIGHT QUOTE */}
         {/* <img src={QuoteRight} alt="quote" className="quote-right" /> */}
 
-        {/* YELLOW ARC */}
+        {/* BACKGROUND CIRCLE + FOOD */}
         <div className="vision-circle">
-  <img src={Food} alt="food" className="food-img" />
-</div>
-
+          <img src={Food} alt="food" className="food-img" />
+        </div>
 
       </div>
     </section>

@@ -1,25 +1,24 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
 
-* {
-  font-family: "Inter", sans-serif;
-}
-
-/* SECTION */
+/* ============================= */
+/* WRAPPER                       */
+/* ============================= */
 .seamless-section {
+  position: relative;
   width: 100%;
+  padding: 70px 20px 80px;
   background-size: cover;
   background-position: center;
-  
-  position: relative;
-  padding: 80px 40px 80px;
-
+  font-family: "Inter", sans-serif;
+  color: #fff;
+  text-align: center;
 }
 
 /* OVERLAY */
-.overlay {
+.seamless-overlay {
   position: absolute;
   inset: 0;
-  background: rgba(0, 40, 0, 0.55);
+  background: rgba(254, 221, 182, 0.92);
   z-index: 1;
 }
 
@@ -27,13 +26,13 @@
 .seamless-content {
   position: relative;
   z-index: 2;
-  text-align: center;
-  color: #fff;
   max-width: 1100px;
   margin: auto;
 }
 
-/* BADGE */
+/* ============================= */
+/* BADGE                         */
+/* ============================= */
 .seamless-badge {
   background: #ffffff;
   color: #000;
@@ -42,10 +41,10 @@
   display: inline-flex;
   align-items: center;
   gap: 10px;
-  font-size: 15px;
+  font-size: 12px;
   font-weight: 600;
   margin-bottom: 20px;
-  box-shadow: 0px 4px 14px rgba(0,0,0,0.15);
+  box-shadow: 0 4px 14px rgba(0,0,0,0.15);
 }
 
 .seamless-badge img {
@@ -53,157 +52,157 @@
   height: 18px;
 }
 
-/* TITLE */
+/* ============================= */
+/* TITLE                         */
+/* ============================= */
 .seamless-title {
-  margin-top: 5px;
-  margin-bottom: 5px;
-  font-size: 45px;
-  color: #f4c542;
+  font-size: 32px;        /* Desktop */
   font-weight: 700;
+  color: #454545;
+  margin-bottom: 6px;
 }
 
 /* UNDERLINE */
-.yellow-underline {
-  width: 260px;
-  height: 40px;
-  margin: 0 auto 10px;
-  background: url("../../../Assets/SeamlessSection/Line.png") no-repeat center;
-  background-size: contain;
+.seamless-underline {
+  width: 260px;           /* Desktop */
+  height: 12px;
+  margin: 0 auto 25px;
+  background: url("../../../Assets/Home/FMCG_Section/Greenline.png")
+              no-repeat center / contain;
 }
 
-/* DESCRIPTION */
+/* ============================= */
+/* DESCRIPTION                   */
+/* ============================= */
 .seamless-desc {
   width: 65%;
-  margin: 0 auto;
+  margin: 0 auto 35px;
   font-size: 17px;
   line-height: 1.65;
-  color: #e5e5e5;
+  color: #464646;
 }
-
-
-.pill1 span,
-.pill span {
-  cursor: pointer;         /* pointer cursor */
-  transition: 0.2s ease-in-out;
-}
-
-.pill1 span:hover,
-.pill span:hover {
-  color: #5A7D19;          /* green color on hover */
-}
-
 
 /* ============================= */
-/* DESKTOP DEFAULT (≥ 1024px)    */
+/* PILLS – MOBILE / TABLET       */
 /* ============================= */
-
 .seamless-pill-box {
-  display: none !important;
+  display: none;
+  flex-direction: column;
+  gap: 14px;
+  align-items: center;
 }
 
-.seamless-pill-box1 {
-  display: flex !important;
+.pill {
   background: #fff;
-  padding: 18px 35px;
-  border-radius: 50px;
-  justify-content: center;
+  padding: 12px 20px;
+  border-radius: 30px;
+  display: flex;
   align-items: center;
-  max-width: 1000px;
-  margin: 25px auto 0;
+  gap: 10px;
+  max-width: 320px;
+  width: 100%;
+  color: #000;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.pill img {
+  width: 18px;
+  height: 18px;
+}
+
+/* ============================= */
+/* PILLS – DESKTOP               */
+/* ============================= */
+.seamless-pill-box-desktop {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+}
+
+.pill-row {
+  background: #fff;
+  padding: 18px 30px;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  font-size: 15px;
+  font-weight: 600;
+  color: #000;
   box-shadow: 0 6px 18px rgba(0,0,0,0.15);
 }
 
-.pill1 {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 20px;
-  font-weight: 600;
-  font-size: 15px;
-  color: #000;
-  white-space: nowrap;
+.pill-row img {
+  width: 18px;
 }
 
-.pill1 img{
-  height: 20px;
-  width: 20px;
-}
+/* ================================================= */
+/* RESPONSIVE – SAME SCALE AS OTHER SECTIONS          */
+/* ================================================= */
 
-/* ============================= */
-/*  MOBILE + TABLET (< 1024px)   */
-/* ============================= */
-
+/* Tablet */
 @media (max-width: 1024px) {
+  .seamless-title {
+    font-size: 28px;
+  }
 
-  /* show mobile list */
+  .seamless-underline {
+    width: 220px;
+  }
+
+  .seamless-desc {
+    width: 80%;
+  }
+
+  .seamless-pill-box-desktop {
+    display: none;
+  }
+
   .seamless-pill-box {
-    display: flex !important;
-    flex-direction: column;
-    gap: 14px;
-    padding: 0 !important;
-    margin-top: 25px;
-    align-items: center;
-    background: transparent !important;
-    box-shadow: none !important;
-  }
-
-  /* hide desktop pill box */
-  .seamless-pill-box1 {
-    display: none !important;
-  }
-
-  .pill {
-    background: white;
-    padding: 12px 18px;
-    border-radius: 30px;
-    width: 100%;
-    max-width: 300px;
     display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
-    color: black;
+  }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .seamless-title {
+    font-size: 24px;
+  }
+
+  .seamless-underline {
+    width: 180px;
+  }
+
+  .seamless-desc {
+    width: 90%;
     font-size: 15px;
-    padding-left: 30px;
-    justify-content: flex-start;
-    border-bottom: 1px dashed rgba(255,255,255,0.3);
-  }
-
-  .pill:last-child {
-    border-bottom: none;
-  }
-
-  .pill img {
-    width: 20px;
-    height: 20px;
-  }
-
-  .img1 {
-    display: block !important;
   }
 }
 
-/* ============================= */
-/* MOBILE SMALL SIZES            */
-/* ============================= */
-
+/* Small Mobile */
 @media (max-width: 480px) {
-  .pill {
-    font-size: 13px !important;
-  }
-  .pill img {
-    width: 16px;
-    height: 16px;
+  .seamless-title {
+    font-size: 20px;
   }
 
-  .yellow-underline {
+  .seamless-underline {
     width: 150px;
-    height: 28px;
+  }
+
+  .seamless-desc {
+    width: 95%;
+    font-size: 14px;
   }
 }
 
-@media (max-width: 380px) {
-  .pill {
-    font-size: 12px;
+/* Extra Small */
+@media (max-width: 360px) {
+  .seamless-title {
+    font-size: 18px;
+  }
+
+  .seamless-underline {
+    width: 130px;
   }
 }

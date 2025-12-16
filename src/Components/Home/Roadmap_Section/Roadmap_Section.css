@@ -1,50 +1,67 @@
+/* ============================= */
+/* WRAPPER                       */
+/* ============================= */
 .roadmap-wrapper {
   display: flex;
-  justify-content: center;
-  gap: 10px;
   align-items: center;
+  justify-content: center;
+  gap: 48px;
+  padding: 80px 20px 0;
+
   font-family: "Inter", sans-serif;
-  transform: translateY(45px);
-  margin-bottom: -50px; 
+}
+
+.roadmap-wrapper {
+  padding: 30px 0 0 10px;
 }
 
 
-/* LEFT IMAGE SETUP */
+
+
+
+
+
+/* ============================= */
+/* LEFT IMAGE                    */
+/* ============================= */
 .left-image-box {
-  position: relative;
   width: 420px;
   height: 420px;
-  margin-right: 140px;
 }
 
+.left-image-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
 
-
-
-/* RIGHT CONTENT */
+/* ============================= */
+/* RIGHT CONTENT                 */
+/* ============================= */
 .right-content {
-  width: 480px;
-  text-align: left;
-}
-.roadmap-title,.brush-underlineone{
-  transform: translateY(-15px);
+  max-width: 520px;
 }
 
-.brush-underlineone{
-  transform: translateY(-30px);
-}
-
+/* ============================= */
+/* TITLE + UNDERLINE             */
+/* ============================= */
 .roadmap-title {
-  font-size: 32px;
+  font-size: clamp(22px, 3.2vw, 32px);
   font-weight: 800;
   color: #6da926;
+  margin: 0;
 }
 
-.brush-underlineone {
-  width: 280px;
-  margin: 5px 0 25px;
+.roadmap-brush {
+  width: clamp(95px, 18vw, 180px);
+  margin: 8px 0 18px;
+  /* 🔥 reduced bottom margin */
+  display: block;
 }
 
-/* STEP CARDS */
+/* ============================= */
+/* STEPS                         */
+/* ============================= */
 .steps {
   display: flex;
   flex-direction: column;
@@ -52,13 +69,12 @@
 }
 
 .step-card {
-  background: #aaa8a81a;
+  background: rgba(0, 0, 0, 0.04);
   padding: 18px 20px;
   border-radius: 16px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  box-shadow: 0 4px 18px rgba(0,0,0,0.08);
 }
 
 .step-left {
@@ -68,241 +84,81 @@
 }
 
 .step-icon {
-  width: 44px;
-  height: 44px;
-  object-fit: contain;
+  width: 42px;
+  height: 42px;
 }
 
-.step-card h4 {
-  font-size: 16px;
+/* TEXT SCALE */
+.step-title {
+  font-size: clamp(14px, 2vw, 16px);
   font-weight: 700;
-  color: #000;
+  margin: 0;
 }
 
-.step-card p {
-  font-size: 14px;
+.step-desc {
+  font-size: clamp(12px, 1.6vw, 14px);
   color: #555;
-  margin-top: 1px;
+  margin-top: 2px;
 }
 
-/* STATUS TAGS */
+/* ============================= */
+/* TAGS                          */
+/* ============================= */
 .tag {
-  padding: 6px 0px;
-  width: 80px;
-  text-align: center;
-  border-radius: 25px;
   font-size: 12px;
   font-weight: 700;
+  padding: 6px 14px;
+  border-radius: 20px;
   color: #fff;
-  white-space: nowrap;         
-  box-shadow: 0 3px 10px rgba(0,0,0,0.12);
-
 }
-
-.tag.olive{
-  width: 100px;
-}
-
 
 .green {
-   background: linear-gradient(
-    180deg,
-    rgba(7, 104, 7, 1) 0%,
-    rgba(117, 150, 2, 1) 100% 
-   );
+  background: linear-gradient(180deg, #64c8f0, #5ba8ce);
+  margin-left: 15px;
 }
 
 .dark-green {
-  background: linear-gradient(
-    180deg,
-    rgba(7, 104, 7, 1) 0%,
-    rgba(117, 150, 2, 1) 100% 
-   );
+  background: linear-gradient(180deg, #977ab8, #d6b6fa);
 }
 
 .olive {
-  background: linear-gradient(
-    180deg,
-    rgba(7, 104, 7, 1) 0%,
-    rgba(117, 150, 2, 1) 100% 
-   );
+  background: linear-gradient(180deg, #071e68, #025396);
 }
 
-/* ========================================================= */
-/*                  RESPONSIVE – ROADMAP UI                  */
-/* ========================================================= */
-
-/* ---------- TABLET (max-width: 1024px) ---------- */
+/* ============================= */
+/* RESPONSIVE                    */
+/* ============================= */
 @media (max-width: 1024px) {
-
   .roadmap-wrapper {
     flex-direction: column;
-    gap: 35px;
-    padding: 40px 20px 50px;
     text-align: center;
-  }
-
-  .left-image-box {
-    width: 340px;
-    height: 340px;
-    margin-right: 0;
+    padding-bottom: 0;
+    /* 🔥 ensure no bottom gap */
   }
 
   .right-content {
-    width: 80%;
-    text-align: center;
+    max-width: 90%;
   }
 
-  .roadmap-title {
-    font-size: 28px;
-  }
-
-  .brush-underline {
-    width: 180px;
+  .roadmap-brush {
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 
-/* ---------- MOBILE (max-width: 768px) ---------- */
 @media (max-width: 768px) {
-
-  .roadmap-wrapper {
-    padding: 35px 20px 40px;
-  }
-
-  .left-image-box {
-    width: 280px;
-    height: 280px;
-  }
-
-  .right-content {
-    width: 100%;
-  }
-
-  .roadmap-title {
-    font-size: 26px;
-  }
-
-  .brush-underline {
-    width: 150px;
-    margin: 6px auto 20px;
-  }
-
-  /* Step Cards (Full width, clean look) */
-  .steps {
-    gap: 16px;
-  }
-
   .step-card {
     flex-direction: column;
     align-items: flex-start;
-    padding: 16px 18px;
     gap: 10px;
-    text-align: left;
   }
-
-  .step-left {
-    gap: 12px;
-  }
-
-  .step-icon {
-    width: 40px;
-    height: 40px;
-  }
-
-  .step-card h4 {
-    font-size: 15px;
-  }
-
-  .step-card p {
-    font-size: 13px;
-  }
-
-  /* Status Tag moves to bottom-right with spacing */
-  .tag {
-    align-self: flex-end;
-    font-size: 11px;
-    padding: 6px 14px;
-  }
-}
-
-/* ---------- SMALL MOBILE (max-width: 480px) ---------- */
-@media (max-width: 480px) {
 
   .left-image-box {
-    width: 230px;
-    height: 230px;
-  }
-
-  .roadmap-title {
-    font-size: 22px;
-  }
-
-  .brush-underline {
-    width: 120px;
-  }
-
-  .steps {
-    gap: 14px;
-  }
-
-  .step-card {
-    padding: 14px 16px;
-  }
-
-  .step-left {
-    gap: 10px;
-  }
-
-  .step-icon {
-    width: 34px;
-    height: 34px;
-  }
-
-  .step-card h4 {
-    font-size: 14px;
-  }
-
-  .step-card p {
-    font-size: 12px;
+    width: 300px;
+    height: 300px;
   }
 
   .tag {
-    font-size: 10px;
-    padding: 5px 12px;
-  }
-}
-/* Tablet */
-@media (max-width: 1024px) {
-  .left-image-box {
-    width: 340px;
-    height: 340px;
-  }
-  .left-image-box img {
-    width: 100%;
-    height: 100%;
-  }
-}
-
-/* Mobile */
-@media (max-width: 768px) {
-  .left-image-box {
-    width: 280px;
-    height: 280px;
-  }
-  .left-image-box img {
-    width: 100%;
-    height: 100%;
-  }
-}
-
-/* Small Mobile */
-@media (max-width: 480px) {
-  .left-image-box {
-    width: 220px;
-    height: 220px;
-  }
-  .left-image-box img {
-    width: 100%;
-    height: 100%;
+    align-self: flex-end;
   }
 }

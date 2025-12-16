@@ -1,6 +1,6 @@
 import React from "react";
 import "./Action_Section.css";
-import store from "../../../Assets/Home/Action_Section/store.jpg";
+import store from "../../../Assets/Home/Action_Section/store.png";
 import DemoIcon from "../../../Assets/Home/Action_Section/star.png";
 
 

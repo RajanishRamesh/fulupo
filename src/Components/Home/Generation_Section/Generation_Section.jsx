@@ -7,42 +7,45 @@ import icon3 from "../../../Assets/Home/Generation_Section/3.png";
 import icon4 from "../../../Assets/Home/Generation_Section/4.png";
 
 import SparkleIcon from "../../../Assets/Home/Generation_Section/Sparkle.png";
-import BrushLine from "../../../Assets/Home/Generation_Section/Brush_Line.png";
-
-
-
 
 export default function Generation_Section() {
   return (
     <section id="future" className="generation-wrapper">
 
-      {/* ⭐ TOP SECTION */}
+      {/* ================= TOP SECTION ================= */}
       <div className="nextgen-wrapper">
 
+        {/* TAG */}
         <div className="nextgen-tag">
-          <img src={SparkleIcon} alt="sparkle" className="sparkle-icon" />
+          <img src={SparkleIcon} alt="sparkle" />
           Future Innovation
         </div>
 
+        {/* TITLE */}
         <h2 className="nextgen-title">The Next Generation</h2>
 
-        <img src={BrushLine} alt="underline" className="underline-one" />
+        {/* UNDERLINE – TITLE KEELA */}
+        <div className="nextgen-underline"></div>
 
+        {/* DESCRIPTION */}
         <p className="nextgen-desc">
-          Introducing PRODUCER Tech - the future of unmanned retail stores.
+          Introducing PRODUCER Tech – the future of unmanned retail stores.
           Revolutionary technology that will transform how customers shop and
           businesses operate.
         </p>
       </div>
 
-      {/* ⭐ GREEN SECTION */}
+      {/* ================= GREEN SECTION ================= */}
       <div className="green-section">
 
-        {/* LEFT SIDE */}
+        {/* LEFT */}
         <div className="left-box">
-          <div className="eco-tag"> <img src={SparkleIcon} alt="sparkle" className="sparkle-icon" /> Complete AI Ecosystem</div>
+          <div className="eco-tag">
+            <img src={SparkleIcon} alt="sparkle" />
+            Complete AI Ecosystem
+          </div>
 
-          <h3 className="producer-title">PRODUCER Tech</h3>
+          <h1 className="producer-title">PRODUCER Tech</h1>
           <p className="producer-sub">The Future of Unmanned Stores</p>
 
           <p className="producer-desc">
@@ -54,36 +57,24 @@ export default function Generation_Section() {
           <button className="yellow-btn">Learn About Producer</button>
         </div>
 
-        {/* RIGHT SIDE CARDS */}
+        {/* RIGHT CARDS */}
         <div className="card-grid">
-
-          <div className="card">
-            <img src={icon1} alt="" />
-            <p>Unmanned Store<br />Operations</p>
-          </div>
-
-          <div className="card">
-            <img src={icon2} alt="" />
-            <p>Original Dimension<br />Recognition</p>
-          </div>
-
-          <div className="card">
-            <img src={icon3} alt="" />
-            <p>Entity Comparison<br />Technology</p>
-          </div>
-
-          <div className="card">
-            <img src={icon4} alt="" />
-            <p>Automated Product<br />Retrieval</p>
-          </div>
-
+          <Card img={icon1} text="Unmanned Store Operations" />
+          <Card img={icon2} text="Original Dimension Recognition" />
+          <Card img={icon3} text="Entity Comparison Technology" />
+          <Card img={icon4} text="Automated Product Retrieval" />
         </div>
 
       </div>
-
-      {/* ⭐ GRASS BORDER BOTTOM */}
-      
-
     </section>
+  );
+}
+
+function Card({ img, text }) {
+  return (
+    <div className="card">
+      <img src={img} alt="" />
+      <p>{text}</p>
+    </div>
   );
 }

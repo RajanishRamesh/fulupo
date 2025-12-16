@@ -1,84 +1,74 @@
 import React from "react";
-import "../SeamlessSection/SeamlessSection.css";
+import "./SeamlessSection.css";
 
 import BG from "../../../Assets/SeamlessSection/Bg.jpg";
 import SparkIcon from "../../../Assets/SeamlessSection/black.png";
 import PillIcon from "../../../Assets/SeamlessSection/Yello_Star.png";
 
-
-
-
-function SeamlessSection() {
+export default function SeamlessSection() {
   return (
-    <div
+    <section
       className="seamless-section"
       style={{ backgroundImage: `url(${BG})` }}
     >
       {/* OVERLAY */}
-      <div className="overlay"></div>
+      <div className="seamless-overlay"></div>
 
       <div className="seamless-content">
 
-        {/* TOP BADGE */}
+        {/* BADGE */}
         <div className="seamless-badge">
-          <img src={SparkIcon} alt="spark-icon" />
+          <img src={SparkIcon} alt="" />
           <span>Complete AI Ecosystem</span>
         </div>
 
         {/* TITLE */}
         <h2 className="seamless-title">Seamless Integration</h2>
-        <div className="yellow-underline"></div>
 
-        {/* SUBTEXT */}
+        {/* UNDERLINE (TITLE KEELA) */}
+        <div className="seamless-underline"></div>
+
+        {/* DESCRIPTION */}
         <p className="seamless-desc">
           All four products work together as a unified ecosystem. Data flows
           seamlessly between store operations, consumer interactions, delivery
           logistics, and vendor management.
         </p>
 
-        {/* FEATURE PILLS */}
+        {/* MOBILE / TABLET PILLS */}
         <div className="seamless-pill-box">
-
-          <div className="pill">
-            <img className="img1" src={PillIcon} alt="" /> <span>Real-time Sync</span>
-          </div>
-
-          <div className="pill">
-            <img src={PillIcon} alt="" /> <span>Single Login</span>
-          </div>
-
-          <div className="pill">
-            <img src={PillIcon} alt="" /> <span>Unified Dashboard</span>
-          </div>
-
-          <div className="pill">
-            <img src={PillIcon} alt="" /> <span>Cross-Platform Data</span>
-          </div>
-
-          <div className="pill">
-            <img src={PillIcon} alt="" /> <span>AI-Powered Insights</span>
-          </div>
-
+          <Pill text="Real-time Sync" icon={PillIcon} />
+          <Pill text="Single Login" icon={PillIcon} />
+          <Pill text="Unified Dashboard" icon={PillIcon} />
+          <Pill text="Cross-Platform Data" icon={PillIcon} />
+          <Pill text="AI-Powered Insights" icon={PillIcon} />
         </div>
 
-        <div className="seamless-pill-box1">
-          <div className="pill1">
-            <span className="pill-slug">Real-time Sync</span>
+        {/* DESKTOP PILLS */}
+        <div className="seamless-pill-box-desktop">
+          <div className="pill-row">
+            <span>Real-time Sync</span>
             <img src={PillIcon} alt="" />
-            <span className="pill-slug">Single Login</span>
+            <span>Single Login</span>
             <img src={PillIcon} alt="" />
-            <span className="pill-slug">Unified Dashboard</span>
+            <span>Unified Dashboard</span>
             <img src={PillIcon} alt="" />
-            <span className="pill-slug">Cross-Platform Data</span>
+            <span>Cross-Platform Data</span>
             <img src={PillIcon} alt="" />
-            <span className="pill-slug">AI-Powered Insights</span>
+            <span>AI-Powered Insights</span>
           </div>
         </div>
-
 
       </div>
-    </div>
+    </section>
   );
 }
 
-export default SeamlessSection;
+function Pill({ text, icon }) {
+  return (
+    <div className="pill">
+      <img src={icon} alt="" />
+      <span>{text}</span>
+    </div>
+  );
+}

@@ -11,10 +11,16 @@
   padding: 40px 0;
   background: transparent;
   position: relative;
-  top: 175px;
-  bottom: 0;
-  z-index: 10;
+  overflow: visible;
+  margin-bottom: 15px;
+  top: 80px;
+  z-index: 999;
 }
+
+.vision-wrapper {
+  padding: 0px 50px 100px;
+}
+
 
 /* CARD */
 .vision-card {
@@ -120,6 +126,8 @@
     padding: 35px;
   }
 
+  
+
   .vision-circle {
     width: 380px;
     height: 340px;
@@ -157,7 +165,10 @@
     height: auto;
   }
 
-  
+  .vision-underline{
+     transform: translateX(205px);
+   }
+
 
 
   .quote-left {
@@ -215,7 +226,7 @@
 
 
    .vision-underline{
-     transform: translateX(125px);
+     transform: translateX(62px);
    }
 
 
@@ -253,7 +264,7 @@
 @media (max-width: 320px) {
 
 .vision-underline{
-     transform: translateX(62px);
+     transform: translateX(15px);
      
      
      
