@@ -1,7 +1,5 @@
 import React from "react";
 import "./Intelligent_Store.css";
-
-import centerFood from "../../../Assets/Home/Intelligent_Store/center.png";
 import veg from "../../../Assets/Home/Intelligent_Store/Veg.png";
 import veg_R from "../../../Assets/Home/Intelligent_Store/Veg_L.png";
 
