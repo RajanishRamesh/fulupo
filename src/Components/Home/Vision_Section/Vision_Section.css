@@ -44,14 +44,14 @@
   z-index: 20;
 }
 
-.quote-right {
+/* .quote-right {
   position: absolute;
   width: 54px;
   height: 41px;
   bottom: 40px;
-  right: 55px;
+  right: 5px;
   z-index: 20;
-}
+} */
 
 /* TEXT BLOCK */
 .vision-content {

@@ -1,7 +1,7 @@
 import React from "react";
 import "./SeamlessSection.css";
 
-import BG from "../../../Assets/SeamlessSection/Bg.jpg";
+import BG from "../../../Assets/SeamlessSection/bg.jpg";
 import SparkIcon from "../../../Assets/SeamlessSection/black.png";
 import PillIcon from "../../../Assets/SeamlessSection/Yello_Star.png";
 

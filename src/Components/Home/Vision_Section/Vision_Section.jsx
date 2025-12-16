@@ -1,8 +1,8 @@
 import React from "react";
 import "./Vision_Section.css";
 
-import QuoteLeft from "../../../Assets/Home/Vision_Section/Quote_L.png";
-import QuoteRight from "../../../Assets/Home/Vision_Section/Quote_R.png";
+// import QuoteLeft from "../../../Assets/Home/Vision_Section/Quote_L.png";
+// import QuoteRight from "../../../Assets/Home/Vision_Section/Quote_R.png";
 import Brush from "../../../Assets/Home/Vision_Section/Brush.png";
 import Food from "../../../Assets/Home/Vision_Section/prod.png";
 
