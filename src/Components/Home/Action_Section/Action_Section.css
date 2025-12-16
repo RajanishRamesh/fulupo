@@ -63,11 +63,11 @@
   font-size: 32px;
  
   font-weight: 700;
-  color: #2d7d1f;
+  color:rgba(69, 69, 69, 1);
 }
 
 .brush-line {
-  width: clamp(200px, 35vw, 400px);   /* 👈 PC max = 400px */
+  width: clamp(200px, 35vw, 400px);   
   height: clamp(6px, 1.5vw, 12px);
   margin: 0 auto 50px;
   background: url("../../../Assets/Home/Action_Section/Greenline.png")
@@ -194,7 +194,7 @@
   font-size: 26px;
   font-weight: 700;
    transform: translateY(25px);
-  color: #2d7d1f;
+  color: rgba(117, 150, 2, 1);
 }
 
 .demo-desc {

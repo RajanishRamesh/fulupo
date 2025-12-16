@@ -1,16 +1,24 @@
-/* ====================================================== */
-/* WRAPPER                                                */
-/* ====================================================== */
+/* ======================================================
+   GLOBAL FONT
+====================================================== */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+
+* {
+  font-family: "Inter", sans-serif;
+}
+
+/* ======================================================
+   WRAPPER
+====================================================== */
 .generation-wrapper {
   width: 100%;
-  font-family: "Inter", sans-serif;
   padding-bottom: 40px;
   text-align: center;
 }
 
-/* ====================================================== */
-/* TOP SECTION                                            */
-/* ====================================================== */
+/* ======================================================
+   TOP SECTION
+====================================================== */
 .nextgen-wrapper {
   padding: 40px 0 50px;
 }
@@ -19,33 +27,29 @@
 .nextgen-tag {
   display: inline-flex;
   align-items: center;
-  gap: 8px;
+  gap: 6px;
   background: #ffffff;
-  padding: 8px 20px;
+  padding: 6px 16px;
   border-radius: 30px;
   border: 1px solid #e6e6e6;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.10);
   font-size: 14px;
   font-weight: 500;
   color: #444;
-}
-
-.nextgen-tag img {
-  width: 16px;
-  height: 16px;
 }
 
 /* TITLE */
 .nextgen-title {
   margin-top: 22px;
   margin-bottom: 6px;
-  font-size: 32px;       /* Desktop */
+  font-size: 32px;
   font-weight: 800;
-  color: #6da926;
+  color: rgba(69, 69, 69, 1);
 }
 
 /* UNDERLINE */
 .nextgen-underline {
-  width: 180px;          /* Desktop */
+  width: 180px;
   height: 12px;
   margin: 0 auto 22px;
   background: url("../../../Assets/Home/Generation_Section/Brush_Line.png")
@@ -61,9 +65,9 @@
   color: #555;
 }
 
-/* ====================================================== */
-/* GREEN SECTION                                          */
-/* ====================================================== */
+/* ======================================================
+   GREEN SECTION
+====================================================== */
 .green-section {
   background: rgba(151, 122, 184, 1);
   padding: 40px 60px;
@@ -73,7 +77,7 @@
   color: #fff;
 }
 
-/* LEFT */
+/* LEFT CONTENT */
 .left-box {
   width: 33%;
   text-align: left;
@@ -91,10 +95,6 @@
   font-size: 14px;
   margin-bottom: 15px;
   font-weight: 500;
-}
-
-.eco-tag img {
-  width: 14px;
 }
 
 .producer-title {
@@ -124,12 +124,12 @@
   border-radius: 24px;
   font-size: 15px;
   font-weight: 600;
-  cursor: pointer;
+  cursor: pointer;   /* ✅ pointer only */
 }
 
-/* ====================================================== */
-/* CARDS                                                  */
-/* ====================================================== */
+/* ======================================================
+   CARDS
+====================================================== */
 .card-grid {
   width: 35%;
   display: grid;
@@ -143,12 +143,8 @@
   border-radius: 16px;
   text-align: center;
   box-shadow: 0 2px 8px rgba(0,0,0,0.10);
-  transition: 0.25s ease;
   transform: translateX(-125px);
-}
-
-.card:hover {
-  transform: translateX(-125px) translateY(-4px) scale(1.03);
+  cursor: pointer;     /* ✅ pointer only */
 }
 
 .card img {
@@ -164,9 +160,9 @@
   margin: 10px 0 0;
 }
 
-/* ====================================================== */
-/* RESPONSIVE                                             */
-/* ====================================================== */
+/* ======================================================
+   RESPONSIVE
+====================================================== */
 
 /* Tablet */
 @media (max-width: 1024px) {
@@ -186,8 +182,9 @@
     transform: none;
   }
 
-  .card { transform: none; }
-  .card:hover { transform: translateY(-4px) scale(1.03); }
+  .card {
+    transform: none;
+  }
 }
 
 /* Mobile */
@@ -196,7 +193,9 @@
   .nextgen-underline { width: 130px; }
   .nextgen-desc { width: 90%; font-size: 14px; }
 
-  .card-grid { grid-template-columns: repeat(2, 1fr); }
+  .card-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 /* Small Mobile */
@@ -205,7 +204,9 @@
   .nextgen-underline { width: 110px; }
   .nextgen-desc { width: 95%; font-size: 13px; }
 
-  .card-grid { grid-template-columns: 1fr; }
+  .card-grid {
+    grid-template-columns: 1fr;
+  }
 }
 
 /* Extra Small */

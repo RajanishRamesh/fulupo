@@ -102,7 +102,7 @@ body {
 }
 
 .hero-title-yellow {
-  color: rgb(255, 255, 255);
+  color: rgba(255, 204, 0, 1);
   display: block;
   margin-top: 5px;
 }
